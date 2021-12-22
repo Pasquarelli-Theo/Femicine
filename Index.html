@@ -7,11 +7,20 @@
     <meta name="description" content="Fémiciné">
 
     <title>Fémiciné</title>
-    
+
+<!-- Déclaration de la feuille de style -->
+
     <link rel="stylesheet" href="src/css/style.css">
+
+<!-- Chargement de la librairie Alpine JS -->
+
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 
   </head>
   <body>
+
+<!-- En-tête de la page -->
+
     <header>
       <button>
         <img src="public/icones/menu.svg" alt="icone menu déroulant"></a>
@@ -19,8 +28,10 @@
 
       <a href='/'> <img src="public/icones/Titre.svg" alt="Logo Féliciné"></a>
 
-      <nav>
-        <ul>
+<!-- Menu principal -->
+
+      <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+        <ul class="menu__list list-unstyled">
           <li><a href="Index.html">Accueil</a></li>
           <li><a href="Article feministe.html">Une féministe au cinéma</a></li>
           <li><a href="Article oeuvre.html">De l’histoire au grand écran</a></li>
@@ -31,19 +42,72 @@
           <li><a href="A propos.html">À propos/Me contacter</a></li>
         </ul>
       </nav>
+
+<!-- Fin du menu principal -->
+
     </header>
 
+<!-- Fin de l'en-tête de page -->
+
+<!-- Contenu principal de la page -->
+
     <main>
+
       <p>    Un club de football, le droit de vote et Star Wars. Trois éléments qui n’ont de prime abord rien en commun, mais une chose les réunit, le féminisme. En grande expansion ces dernières années, le féminisme est devenu très important dans la société actuelle. En effet nous pouvons régulièrement assister à des actions féministe venant de groupe ou même d’un simple rassemblement. Mais il y a une chose à ne pas oublier, le chemin à été long pour en arriver là et de nombreux combats ont été nécessaire. L’un des plus importants est sans doute celui pour le droit de vote des femmes qui a commencé il y a de très nombreuses années et n’est toujours pas fini dans certains pays. De nombreuses disciplines ont aussi eu leur importance dans la lutte féministe, l’une d’entre elle est le cinéma et d’ailleurs le sujet principale de ce site. </p>
-      <img src="public/img/Lien NP.svg" alt="Natalie Portman enfant et adulte">
+      
+      <img src="public/img/Lien_NP.webp" alt="Natalie Portman enfant et adulte">
+      <h2>Une féministe au cinéma</h2>
+      <img src="public/icones/Ligne_hori.svg" alt="Ligne horizontale">
       <p>Depuis de très nombreuses années des personnalités sont engagé dans la lutte féministe comme l’actrice Natalie Portman.</p>
+      <p>Voir plus ...</p>
+
+      <img src="public/img/Lien_film.webp" alt="Affiche du film Les Suffragettes">
+      <h2>De l’histoire au grand écran</h2>
+      <img src="public/icones/Ligne_hori.svg" alt="Ligne horizontale">
+      <p>Réalisé par Sarah Gavron, le film Les Suffragettes retrace la fin de la lutte des suffragettes à la fin du XXe siècle.</p>
+      <p>Voir plus ...</p>
+
+      <img src="public/img/Lien_Suffragettes.webp" alt="Photo d'un groupe de suffragettes">
+      <h2>Les suffragettes, un histoire de droit de vote</h2>
+      <img src="public/icones/Ligne_hori.svg" alt="Ligne horizontale">
+      <p>Les suffragettes sont un groupe de militantes qui ont lutté pour le droit de vote des femmes durant plusieurs années.</p>
+      <p>Voir plus ...</p>
+    
+      <h2>Vidéo</h2>
+
+      <h2>Galerie du féminisme </h2>
+      <img src="public/icones/Ligne_hori.svg" alt="Ligne horizontale"><br>
+      <img src="public/icones/EW_Galerie.svg" alt="Photo de Emma Watson">
+      <img src="public/icones/RP_Galerie.svg" alt="Photo de Rosa Parks">
+      <p>Voir plus ...</p>
+
     </main>
 
+<!-- Fin du contenu principal -->
 
+<!-- Pied de page -->
 
+    <footer>
+    <p>Contact : 
+        - Me contacter
+        - À propos
+    </p>
+    <p>Département MMI Montbéliard</p>
+    <img src="public/icones/logo_mmi.svg" alt="Logo MMI">
+    <p>4 Place Tharradin, 25200 Montbéliard</p>
+    <img src="public/icones/chevrons_up_1.svg" alt="Flèche pour remonter dans la page">
+    <p>theopasquarelli68@gmail.com</p>
+    <p>Me suivre</p>
+    <img src="public/icones/instagram.svg" alt="Logo Instagram">
+    <img src="public/icones/twitter.svg" alt="Logo Twitter">
+    <img src="public/icones/facebook.svg" alt="Logo Facebook">
+    <img src="public/icones/Drapeau_fr.svg" alt="Drapeau français">
+    <img src="public/icones/Drapeau_ru.svg" alt="Drapeau du Royaume-Uni">
+    <p>Projet réalisé dans le cadre d’un execrice pédagogique au département MMI de Montbéliard</p>
 
+    </footer>
+<!-- Fin du pied de page -->
 
-
-
-
+  
   </body>
+</html>

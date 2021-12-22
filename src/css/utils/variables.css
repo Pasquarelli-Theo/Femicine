@@ -1,0 +1,36 @@
+:root{
+/* Styles de couleur */
+--bordeaux:         rgba(124, 8, 8, 1);
+--violet:           rgba(91, 30, 119, 1);
+--gris:             rgba(245, 245, 245, 1);
+--noir-lien:        rgba(0, 0, 0, 0.800000011920929);
+--violet-lien:      rgba(91, 30, 119, 0.800000011920929);
+--blanc:            rgba(255, 255, 255, 1);
+--blanc-lien:       rgba(255, 255, 255, 0.800000011920929);
+--bordeaux-lien:    rgba(124, 8, 8, 0.800000011920929);
+
+/* Tailles de police de caractère */
+--texte: 14px;
+--légendes: 10px;
+--titre: 35px;
+--intertitre: 24px;
+--chapo: 16px;
+--titre-article: 31px;
+--heading-1: 44px;
+--footer: 11px;
+--titre-menu: 27px;
+
+/* Polices de caractère */
+--font-mono: 'Space Mono', monospace;
+--font-sans-serif: 'Mulish', sans-serif;
+
+/* Font variantes */
+--letter-spacing: 0.05em;
+
+/* Espaces */
+--space1x: 8px;
+--space2x: 16px;
+--space3x: 24px;
+--space4x: 48px;
+--space5x: 80px;
+} 
