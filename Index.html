@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
   <head>
     <meta charset="utf-8">
     <link href="src/css/gabarit.css">
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Fémiciné">
 
-    <title>Fémiciné - Article Natalie Portman</title>
+    <title>Fémiciné</title>
 
 <!-- Déclaration de la feuille de style -->
 
@@ -24,16 +24,21 @@
     <script src="src/js/fonctions.js"></script>
 
   </head>
-  <body>
+  <body x-data="{ atTop : false }"></body>
 
 <!-- En-tête de la page -->
 
     <header>
-      <button>
-        <img src="public/icones/menu.svg" alt="icone menu déroulant"></a>
-      </button>
 
       <a href='/'> <img src="public/icones/Titre.svg" alt="Logo Fémiciné"></a>
+       
+      <div class="header__end">
+
+      <button class="header__menu-btn menu-btn"
+                @click="menuIsOpen = !menuIsOpen"
+                :class="menuIsOpen && 'menu-btn--open'">
+          <span class="menu-btn__bar"></span>
+      </button>
 
 <!-- Menu principal -->
 
@@ -46,12 +51,12 @@
           <li><a href="Frise.html">Frise chronologique</a></li>
           <li><a href="Galerie.html">Galerie du féminisme</a></li>
           <li><a href="Autres projets.html">Autres projets</a></li>
-          <li><a href="A propos.html">À propos/Me contacter</a></li>
+          <li><a href="À propos.html">À propos/Me contacter</a></li>
         </ul>
       </nav>
 
 <!-- Fin du menu principal -->
-
+      </div>
     </header>
 
 <!-- Fin de l'en-tête de page -->
@@ -92,10 +97,12 @@
 
 <!-- Fin du contenu principal -->
 
+<br>
+
 <!-- Pied de page -->
 
     <footer>
-    <a class="#" href="A propos.html"><p>Contact : 
+    <a class="#" href="À propos.html"><p>Contact : 
         - Me contacter
         - À propos
     </p></a>

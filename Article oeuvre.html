@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
   <head>
     <meta charset="utf-8">
     <link href="src/css/gabarit.css">
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Fémiciné">
 
-    <title>Fémiciné - Article Natalie Portman</title>
+    <title>Fémiciné - Article film</title>
 
 <!-- Déclaration de la feuille de style -->
 
@@ -24,16 +24,21 @@
     <script src="src/js/fonctions.js"></script>
 
   </head>
-  <body>
+  <body x-data="{ atTop : false }"></body>
 
 <!-- En-tête de la page -->
 
     <header>
-      <button>
-        <img src="public/icones/menu.svg" alt="icone menu déroulant"></a>
-      </button>
 
       <a href='/'> <img src="public/icones/Titre.svg" alt="Logo Fémiciné"></a>
+       
+      <div class="header__end">
+
+      <button class="header__menu-btn menu-btn"
+                @click="menuIsOpen = !menuIsOpen"
+                :class="menuIsOpen && 'menu-btn--open'">
+          <span class="menu-btn__bar"></span>
+      </button>
 
 <!-- Menu principal -->
 
@@ -46,15 +51,17 @@
           <li><a href="Frise.html">Frise chronologique</a></li>
           <li><a href="Galerie.html">Galerie du féminisme</a></li>
           <li><a href="Autres projets.html">Autres projets</a></li>
-          <li><a href="A propos.html">À propos/Me contacter</a></li>
+          <li><a href="À propos.html">À propos/Me contacter</a></li>
         </ul>
       </nav>
 
 <!-- Fin du menu principal -->
-
+      </div>
     </header>
 
 <!-- Fin de l'en-tête de page -->
+
+<br>
 
 <!-- Contenu principal de la page -->
 
@@ -63,23 +70,24 @@
   <h2>De l’histoire au grand écran</h2>
   <img src="public/icones/Ligne_hori.svg" alt="Ligne horizontale de séparation">
   <p>    Réalisé par Sarah Gavron et sorti en France le 17 novembre 2015, le film Les Suffragettes retrace la fin de la lutte pour le droit de vote au Royaume-Uni de 1912 à 1913. Porté par une grande prestation de Carey Mulligan, le film nous raconte l’histoire de Maud Watts, devenue suffragette en un sens malgré elle.</p><br>
-  <p>Une histoire vraie</p>
+  <h3>Une histoire vraie</h3>
   <img src="public/icones/Ligne_hori.svg" alt="Ligne horizontale de séparation"><br>
   <br><img src="public/img/Promo_Suffragettes.webp" alt="Affiche du film Les Suffragettes">
   <figcaption><p>Affiche promotionnelle pour le film les Suffragettes</p></figcaption>
   <p>Ce film retrace donc l’histoire de Maud Watts, interprétée par Carey Mulligan, une jeune femme de 24 ans, marié et mère d’un petit garçon. Maud travaille depuis petite dans une blanchisserie et a une vie des plus ordinaire pour cette époque. Mais sa vie va changer lorsque son directeur lui confie la livraison d’un colis. Lors du trajet Maud est prise au milieu d’une action des suffragettes et reconnais Violet Miller, également employée à la blanchisserie. Les deux femmes assistent quelques jours elles à la femme d’un député qui propose d’aller témoigner au Parlement dans le but d’obtenir le droit de vote, Violet Miller accepte immédiatement. Après avoir refusé Maud Watts accepte de venir assister à l'événement, elle se retrouve tout de même malgré elle à témoigner car Violet ne le peut pas. Maud raconte donc au juge son histoire lors d’un discours poignant, elle raconte qu’elle est exploitée depuis des années et les inégalités à la blanchisserie. Après plusieurs témoignages, les femmes attendent le verdict qui est évidemment négatif. La foule s’agite et les policiers répondent avec violence, Maud est finalement arrêtée et mise en prison pendant une semaine.</p>
   <img src="public/img/image_film1.webp" alt="Les personnages de Maud et Violet durant une manifestation">
-  <p>Maud et Violet durant une manifestation</p>
+  <figcaption><p>Maud et Violet durant une manifestation</p></figcaption>
   <img src="public/icones/points_1.svg" alt="Essemble de points rouges">
   <p>À son retour chez elle, son mari Sonny lui explique son mécontentement, la honte subit par sa faute et lui ordonne de ne pas recommencer. Mais après quelques jours Maud assiste à une réunion des suffragettes chez Edith Ellyn, jouée par Helena Bonham Carter, une pharmacienne et suffragette. Puis assiste à un discours de Emmeline Pankhurst, interprété par Meryl Streep, créatrice du WSPU et leader des suffragettes. Mais la police arrive vite sur les lieux et Maud est à nouveau incarcérée. À sa sortie, son mari n’accepte qu’elle rentre et lui interdit de voir son fils. C’est à ce moment que Maud rejoint totalement les suffragettes et participe à de plus en plus d'actions dont l’explosion de la maison, vide, d’un parlementaire. Maud est encore arrêtée et décide d’entamer une grève de la faim, pour contrer cela elle est nourrie de force par les gardes.</p>
   <img src="public/icones/points.svg" alt="Essemble de points violets">
-  <img src="public/img/image_film2.webp">
+  <img src="public/img/image_film2.webp" alt="Photo de la scène durant laquelle Maud est arrêtée par la police">
+  <figcaption><p>Maud arrêtée par la police</p></figcaption>
   <p>Une fois sortie, le groupe décide de mener leur plus grande action, rentré un contact avec le roi George V lors d’une course hippique. Mais les femmes rencontrent des difficultés et Emily Davison, que Maud avait rencontré en prison, se jette sous le cheval du roi avec une banderole à la main. Cela permet aux suffragettes de faire la une des journaux et de se faire entendre. C’est en 1918 que tout cela abouti, les femmes de plus de 21 ans obtiennent le droit de vote et l’obtiennent toutes en 1928.</p>
 
-
-  <h3>Un film à la hauteur de ses propos ?</h3><br>
-  <br><img src="public/icones/Ligne_hori.svg" alt="Ligne horizontale de séparation">
-  <p>Le film à reçu d’assez bonnes critique, 3,8/5 sur<a class="/" href="https://www.allocine.fr/film/fichefilm_gen_cfilm=222967.html"><p>Allociné</p></a>et 73% sur<a class="/" href="https://www.rottentomatoes.com/m/suffragette"><p>Rotten Tomatoes</p></a>grâce à une bonne réalisation de Sarah Gavron, de bonnes prestations de la part des acteurs mais surtout un très bon scénario. En effet l’un des point fort du film est qu’il traite des suffragettes sans utiliser la facilité et conter l’histoire de Emmeline Pankhurst. Nous suivons une femme qui n’a au départ aucun lien avec le WSPU mais finit par être l’un des membre important du groupe. Cela change des habituels films historiques et est une très bonne idée. De plus, la scénariste Abi Morgan n’a pas cherché à diaboliser les hommes, ce qui n’aurait pas été compliqué. En effet les personnages masculins sont certes durs avec les femmes mais c’est un comportement cohérent avec l’époque durant lequel se déroule le film. Nous avons donc à faire à un film de qualité avec un scénario plus que réussi et des actrices et des acteurs qui ont très bien rempli leur rôle.</p>
+<br>
+  <h3>Un film à la hauteur de ses propos ?</h3>
+  <img src="public/icones/Ligne_hori.svg" alt="Ligne horizontale de séparation">
+  <br><br><p>Le film à reçu d’assez bonnes critique, 3,8/5 sur<a class="/" href="https://www.allocine.fr/film/fichefilm_gen_cfilm=222967.html"><p>Allociné</p></a>et 73% sur<a class="/" href="https://www.rottentomatoes.com/m/suffragette"><p>Rotten Tomatoes</p></a>grâce à une bonne réalisation de Sarah Gavron, de bonnes prestations de la part des acteurs mais surtout un très bon scénario. En effet l’un des point fort du film est qu’il traite des suffragettes sans utiliser la facilité et conter l’histoire de Emmeline Pankhurst. Nous suivons une femme qui n’a au départ aucun lien avec le WSPU mais finit par être l’un des membre important du groupe. Cela change des habituels films historiques et est une très bonne idée. De plus, la scénariste Abi Morgan n’a pas cherché à diaboliser les hommes, ce qui n’aurait pas été compliqué. En effet les personnages masculins sont certes durs avec les femmes mais c’est un comportement cohérent avec l’époque durant lequel se déroule le film. Nous avons donc à faire à un film de qualité avec un scénario plus que réussi et des actrices et des acteurs qui ont très bien rempli leur rôle.</p>
   <img src="public/img/actrices_film.webp" alt="Photo des actrices principales du film">
   <figcaption><p>Les actrices de Emmeline, Maud, Edith et Violet (de gauche à droite)</p></figcaption>
 
@@ -99,7 +107,7 @@
 <!-- Pied de page-->
 
 <footer>
-  <a class="#" href="A propos.html"><p>Contact : 
+  <a class="#" href="À propos.html"><p>Contact : 
       - Me contacter
       - À propos
   </p></a>

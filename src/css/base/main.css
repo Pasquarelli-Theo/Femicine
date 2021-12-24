@@ -1,0 +1,14 @@
+/* Transforme le modèle de boite par défaut pour inclure dans la largeur et la hauteur, les marges intérieures et les bordures. */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* Les règles typographiques générales qui s'appliquent à tout le site */
+body {
+  font-family: var(--font-sans-serif);
+  font-size: var(--text-md);
+  line-height: 1.6;
+  background-color: #F5F5F5;
+}
