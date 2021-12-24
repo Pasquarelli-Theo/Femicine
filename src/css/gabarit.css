@@ -1,0 +1,130 @@
+* {
+	margin: 0; 					/* marges avec les bords des éléments voisins */
+	padding: 0;					/* marges entre un contenu et son bord */
+	border: 0;					/* épaisseurs des traits de bordures */
+	background-color: #252423;
+}
+
+.exemples {
+	display: grid;									/* Disposition en grille CSS */
+	grid-template-columns: 1fr 2fr 1fr;				/* Tailles des colonnes : chaque ligne contient 3 cellules */
+	row-gap: 0px;									/* Espacement entre les lignes */
+	column-gap: 0px;								/* Espacement entre les colonnes */
+	grid-auto-rows: minmax(100px, auto);			/* Tailles maximum et minimum des lignes : une ligne ne peut pas faire moins de 100px 
+														même si la largeur de l'écran est inférieure (on ne verra plus le bout de la ligne.
+														Les largeurs de cellules s'étireront et s'espaceront automatiquement sans limite max */
+}
+
+.entete {
+	grid-column: 1 / 4;			/* La div "entete" tient sur les colonnes 1 à 4 (colonne 4 non incluse) */
+	grid-row: 1;				/* Elle tient sur la première ligne de la grille */
+}
+
+.line {
+	grid-column: 2;
+	grid-row: 2;
+	width: 100%;
+	padding: 1px;
+}
+
+.grille {
+	grid-column: 2;
+	grid-row: 2;
+  	position: relative;
+  	display: flex;
+  	width: 100%;
+  	min-height: 200px;
+  	flex-direction: column;
+  	width: 100px;
+  	height: 100%;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.objet, .square {
+	background-color: #7C0808;
+	width: 28px;
+	height: 28px;
+	margin: 1px;
+	font-size: 14px;
+	position: relative;
+}
+
+.shadow {
+	opacity: .2;
+	position: absolute;
+}
+
+.full {
+	margin-left: 28px;
+}
+
+.small {
+  width: 18px;
+  height: 18px;
+  /*background-color: #00D672;*/
+  position: relative;
+}
+
+path {
+	stroke: #7C0808; /*#FFFFFF;*/ /*#8453E3;*/
+	stroke-width: 1px;
+}
+
+.follow-path {
+	position: relative;
+	top: 9px;
+	left: -9px;
+}
+
+.visionneuse {
+	grid-column: 2;
+	grid-row: 2;
+	width: 500px;
+	height: 323px;
+	padding: 1px;
+	position: relative;
+	overflow: hidden;
+}
+
+.image img{
+	width: 100%;
+	z-index: 1;
+	position: relative;
+}
+
+.carrousel{
+	grid-column: 2;
+	grid-row: 2;
+	width: 540px;
+	padding: 0px;
+	position: relative;
+	overflow: hidden;
+}
+
+.droite{
+	grid-row: 2;
+	grid-column: 1;
+	width: 40px;
+}
+
+.imagesfilms{
+	width: 6600px;
+	height: 323px;
+	left:0;
+}
+
+.imagesfilms img{
+	width: 500px;
+	height: 323px;
+}
+
+.imagefilms {
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 0;
+}
