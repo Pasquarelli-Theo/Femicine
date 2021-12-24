@@ -25,15 +25,20 @@
 
   </head>
   <body>
+
+<!-- En-tête de la page -->
+
     <header>
       <button>
         <img src="public/icones/menu.svg" alt="icone menu déroulant"></a>
       </button>
 
-      <a href='/'> <img src="public/icones/Titre.svg" alt="Logo Féliciné"></a>
+      <a href='/'> <img src="public/icones/Titre.svg" alt="Logo Fémiciné"></a>
 
-      <nav>
-        <ul>
+<!-- Menu principal -->
+
+      <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+        <ul class="menu__list list-unstyled">
           <li><a href="Index.html">Accueil</a></li>
           <li><a href="Article feministe.html">Une féministe au cinéma</a></li>
           <li><a href="Article oeuvre.html">De l’histoire au grand écran</a></li>
@@ -44,7 +49,12 @@
           <li><a href="A propos.html">À propos/Me contacter</a></li>
         </ul>
       </nav>
+
+<!-- Fin du menu principal -->
+
     </header>
+
+<!-- Fin de l'en-tête de page -->
 
 
 
