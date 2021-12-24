@@ -7,7 +7,7 @@
 
 .exemples {
 	display: grid;									/* Disposition en grille CSS */
-	grid-template-columns: 1fr 2fr 1fr;				/* Tailles des colonnes : chaque ligne contient 3 cellules */
+	grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr;				/* Tailles des colonnes : chaque ligne contient 3 cellules */
 	row-gap: 0px;									/* Espacement entre les lignes */
 	column-gap: 0px;								/* Espacement entre les colonnes */
 	grid-auto-rows: minmax(100px, auto);			/* Tailles maximum et minimum des lignes : une ligne ne peut pas faire moins de 100px 
@@ -16,7 +16,7 @@
 }
 
 .entete {
-	grid-column: 1 / 4;			/* La div "entete" tient sur les colonnes 1 à 4 (colonne 4 non incluse) */
+	grid-column: 1 / 6;			/* La div "entete" tient sur les colonnes 1 à 4 (colonne 4 non incluse) */
 	grid-row: 1;				/* Elle tient sur la première ligne de la grille */
 }
 
@@ -33,7 +33,7 @@
   	position: relative;
   	display: flex;
   	width: 100%;
-  	min-height: 200px;
+  	min-height: 100px;
   	flex-direction: column;
   	width: 100px;
   	height: 100%;
@@ -53,11 +53,6 @@
 	position: relative;
 }
 
-.shadow {
-	opacity: .2;
-	position: absolute;
-}
-
 .full {
 	margin-left: 28px;
 }
@@ -67,17 +62,6 @@
   height: 18px;
   /*background-color: #00D672;*/
   position: relative;
-}
-
-path {
-	stroke: #7C0808; /*#FFFFFF;*/ /*#8453E3;*/
-	stroke-width: 1px;
-}
-
-.follow-path {
-	position: relative;
-	top: 9px;
-	left: -9px;
 }
 
 .visionneuse {
@@ -90,7 +74,7 @@ path {
 	overflow: hidden;
 }
 
-.image img{
+.imagefilms img{
 	width: 100%;
 	z-index: 1;
 	position: relative;
