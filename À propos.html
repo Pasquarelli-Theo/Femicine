@@ -61,8 +61,28 @@
 
 <!-- Fin de l'en-tête de page -->
 
+<!-- Contenu principal de la page -->
 
+<main>
 
+  <h2>À propos</h2>
+  <img src="public/icones/Ligne_hori.svg" alt="Ligne horizontale de séparation">
+  <p>Je suis un étudiant en BUT MMI à Montbéliard du nom de Théo Pasquarelli et j’ai 18 ans. Ce projet me tient à cœur car il est le premier que je réalise, je vous remercie d’ailleurs de l’avoir consulté. Je suis arrivé en MMI en septembre 2021 après de longues recherches et je ne regrette pas mon choix ! Ce site traite du féminisme, un sujet très important car malgré notre époque il existe encore de nombreuses inégalités entre les hommes et les femmes. J’ai décidé d’aborder le féminisme en grande partie par le cinéma car c’est une de mes passion mais également car de nombreux acteurs et actrices se revendiquent féministe et qu’il existe plusieurs film sur le sujet.
+    Je pense vous avoir dit l’essentiel pour le moment et vous laisse continuer à naviguer sur le site ou bien me contacter grâce au formulaire ci-dessous.</p>
+
+  <h2>Contact</h2>
+ <img src="public/icones/Ligne_hori.svg" alt="Ligne horizontale de séparation">
+ <p class="required" x-data="{cText: 'white', cFond: 'red', cChange: 'blue'}">
+  Premier champ de saisie obligatoire :
+  <input type="text" 
+  id="obligatoire"
+  x-ref="champ"
+  x-on:click="$refs.champ.style.backgroundColor = ''+cFond+'';
+        $refs.champ.style.color = ''+cText+'';"
+  x-on:change="$refs.champ.style.backgroundColor = ''+cChange+'';"/>
+
+</p>
+  
 
 
 
