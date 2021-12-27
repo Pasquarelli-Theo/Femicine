@@ -10,7 +10,7 @@ body {
   font-family: var(--font-text);
   font-size: var(--text);
   line-height: 1.125;
-  background-color: var(--noir);
+  background-color: var(--gris);
 }
 
 /* Les règles typographiques générales des titres */

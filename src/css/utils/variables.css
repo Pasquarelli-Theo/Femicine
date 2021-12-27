@@ -4,7 +4,7 @@
 --violet:           rgba(91, 30, 119, 1);
 --gris:             rgba(245, 245, 245, 1);
 --noir-lien:        rgba(0, 0, 0, 0.800000011920929);
---black:             rgba(0, 0, 0, 0);
+--gray-black:       rgba(0, 0, 0, 1);
 --violet-lien:      rgba(91, 30, 119, 0.800000011920929);
 --blanc:            rgba(255, 255, 255, 1);
 --blanc-lien:       rgba(255, 255, 255, 0.800000011920929);
@@ -18,7 +18,7 @@
 --chapo: 16px;
 --title-article: 31px;
 --footer: 11px;
---title-menu: 27px;
+--title-menu: 20px;
 
 /* Polices de caractère */
 --font-text: 'Spinnaker';
