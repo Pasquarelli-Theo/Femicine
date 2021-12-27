@@ -28,9 +28,14 @@
 
 <!-- En-tête de la page -->
 
-    <header>
+<header class="header" 
+            :class="atTop && 'header--atTop'"
+            @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
+
+      <div class="header__start">
 
       <a href='/'> <img src="public/icones/Titre.svg" alt="Logo Fémiciné"></a>
+      </div>
        
       <div class="header__end">
 

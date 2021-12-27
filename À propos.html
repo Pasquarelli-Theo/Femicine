@@ -70,23 +70,71 @@
   <p>Je suis un étudiant en BUT MMI à Montbéliard du nom de Théo Pasquarelli et j’ai 18 ans. Ce projet me tient à cœur car il est le premier que je réalise, je vous remercie d’ailleurs de l’avoir consulté. Je suis arrivé en MMI en septembre 2021 après de longues recherches et je ne regrette pas mon choix ! Ce site traite du féminisme, un sujet très important car malgré notre époque il existe encore de nombreuses inégalités entre les hommes et les femmes. J’ai décidé d’aborder le féminisme en grande partie par le cinéma car c’est une de mes passion mais également car de nombreux acteurs et actrices se revendiquent féministe et qu’il existe plusieurs film sur le sujet.
     Je pense vous avoir dit l’essentiel pour le moment et vous laisse continuer à naviguer sur le site ou bien me contacter grâce au formulaire ci-dessous.</p>
 
+<!-- Fin du contenu principal -->
+
+<!-- Formulaire de contact -->
+
   <h2>Contact</h2>
  <img src="public/icones/Ligne_hori.svg" alt="Ligne horizontale de séparation">
  <p class="required" x-data="{cText: 'white', cFond: 'red', cChange: 'blue'}">
-  Premier champ de saisie obligatoire :
-  <input type="text" 
+  Prénom :
+  <br><input type="text" 
   id="obligatoire"
-  x-ref="champ"
-  x-on:click="$refs.champ.style.backgroundColor = ''+cFond+'';
-        $refs.champ.style.color = ''+cText+'';"
-  x-on:change="$refs.champ.style.backgroundColor = ''+cChange+'';"/>
-
+  x-ref="champ"/>
 </p>
   
+<p class="required" x-data="{cText: 'white', cFond: 'red', cChange: 'blue'}">
+  Nom :
+  <br><input type="text" 
+  id="obligatoire"
+  x-ref="champ"/>
+</p>
+
+<p class="required" x-data="{cText: 'white', cFond: 'red', cChange: 'blue'}">
+  E-mail :
+  <br><input type="text" 
+  id="obligatoire"
+  x-ref="champ"/>
+</p>
+
+<p class="required" x-data="{cText: 'white', cFond: 'red', cChange: 'blue'}">
+  Message :
+  <br><input type="text" 
+  id="obligatoire"
+  x-ref="champ"/>
+</p>
+
+<a class="#" href="À propos.html"><p>Envoyer</p></a>
+
+<p>Vistez les sites de mes camarades en <a class="/" href="Autres projets.html">cliquant ici !</p>
+</main>
+
+<!-- Fin du formulaire de contact -->
+
+<br>
+
+<!-- Pied de page -->
+<footer>
+  <a class="#" href="À propos.html"><p>Contact : 
+      - Me contacter
+      - À propos
+  </p></a>
+  <p>Département MMI Montbéliard</p>
+  <img src="public/icones/logo_mmi.svg" alt="Logo MMI">
+  <p>4 Place Tharradin, 25200 Montbéliard</p>
+  <img src="public/icones/chevrons_up_1.svg" alt="Flèche pour remonter dans la page">
+  <p>theopasquarelli68@gmail.com</p>
+  <p>Me suivre</p>
+  <img src="public/icones/instagram.svg" alt="Logo Instagram">
+  <img src="public/icones/twitter.svg" alt="Logo Twitter">
+  <img src="public/icones/facebook.svg" alt="Logo Facebook">
+  <img src="public/icones/Drapeau_fr.svg" alt="Drapeau français">
+  <img src="public/icones/Drapeau_ru.svg" alt="Drapeau du Royaume-Uni">
+  <p>Projet réalisé dans le cadre d’un execrice pédagogique au département MMI de Montbéliard</p>
+
+  </footer>
+<!-- Fin du pied de page -->
 
 
-
-
-
-
-  </body>
+</body>
+</html>

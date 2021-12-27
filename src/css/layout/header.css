@@ -1,0 +1,23 @@
+/* La position "fixed" permet à l'élément d'être toujours présent à l'écran, ici en haut à gauche et couvre toute la largeur de l'écran.
+Flex sert à positionner les éléments de l'en-tête (header__start et header__end) l'un à coté de l'autre alors que la valeur "space-between" de "justify-content" permet des les répartir de part et d'autre de l'écran (l'un à gauche, l'autre à droite)
+*/
+.header {
+    background-color: var(--bordeaux);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    padding: var(--space2x) var(--space3x);
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .header__end {
+    display: flex;
+    gap: var(--space2x);
+  }
+  
+  .header__logo {
+    display: block;
+  }
