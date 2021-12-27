@@ -7,8 +7,62 @@
 
 /* Les règles typographiques générales qui s'appliquent à tout le site */
 body {
-  font-family: var(--font-sans-serif);
-  font-size: var(--text-md);
-  line-height: 1.6;
-  background-color: #F5F5F5;
+  font-family: var(--font-text);
+  font-size: var(--text);
+  line-height: 1.125;
+  background-color: var(--noir);
+}
+
+/* Les règles typographiques générales des titres */
+h1,
+h2,
+h3 {
+  font-family: var(--font-title);
+  font-weight: normal;
+  line-height: 1.5625;
+}
+
+h1 {
+  font-size: var(--title);
+}
+
+h2 {
+  font-size: var(--title-article);
+  line-height: 1.3125;
+}
+
+h3 {
+  font-size: var(--intertitre);
+  line-height: 1.3125;
+}
+
+/* permet d'annuler la mise en forme des bouton qu'applique le navigateur. */
+button {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Pour enlever l'apparence par défaut des listes */
+.list-unstyled {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Classe générique permettant de définir les marges sur les cotés */
+.container {
+  padding-left: var(--space3x);
+  padding-right: var(--space3x);
+}
+
+/* Bug IOS
+=> L'overflow doit être appliqué sur l'élément body ET html
+pour faire disparaître le scroll sur safari IOS */
+.noscroll,
+.noscroll body {
+  overflow: hidden;
 }

@@ -4,25 +4,25 @@
 --violet:           rgba(91, 30, 119, 1);
 --gris:             rgba(245, 245, 245, 1);
 --noir-lien:        rgba(0, 0, 0, 0.800000011920929);
+--black:             rgba(0, 0, 0, 0);
 --violet-lien:      rgba(91, 30, 119, 0.800000011920929);
 --blanc:            rgba(255, 255, 255, 1);
 --blanc-lien:       rgba(255, 255, 255, 0.800000011920929);
 --bordeaux-lien:    rgba(124, 8, 8, 0.800000011920929);
 
 /* Tailles de police de caractère */
---texte: 14px;
---légendes: 10px;
---titre: 35px;
+--text: 14px;
+--legende: 10px;
+--title: 35px;
 --intertitre: 24px;
 --chapo: 16px;
---titre-article: 31px;
---heading-1: 44px;
+--title-article: 31px;
 --footer: 11px;
---titre-menu: 27px;
+--title-menu: 27px;
 
 /* Polices de caractère */
---font-mono: 'Space Mono', monospace;
---font-sans-serif: 'Mulish', sans-serif;
+--font-text: 'Spinnaker';
+--font-title: 'Zen Kurenaido';
 
 /* Font variantes */
 --letter-spacing: 0.05em;

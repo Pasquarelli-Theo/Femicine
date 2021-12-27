@@ -24,7 +24,7 @@
     <script src="src/js/fonctions.js"></script>
 
   </head>
-  <body x-data="{ atTop : false }"></body>
+  <body x-data="{ atTop : false }">
 
 <!-- En-tête de la page -->
 
@@ -34,9 +34,9 @@
 
       <div class="header__start">
 
-      <a href='/'> <img src="public/icones/Titre.svg" alt="Logo Fémiciné"></a>
+      <h1><a href='/'> <img src="public/icones/Titre.svg" alt="Logo Fémiciné"></a></h1>
       </div>
-       
+
       <div class="header__end">
 
       <button class="header__menu-btn menu-btn"
@@ -106,15 +106,25 @@
 
 <!-- Pied de page -->
 
-    <footer>
-    <a class="#" href="À propos.html"><p>Contact : 
-        - Me contacter
-        - À propos
+  <footer class="footer">
+
+  <div class="footer__contact">  
+    <a class="#" href="À propos.html">
+  <p class="footer__title">Contact : 
+<br>        - Me contacter
+<br>        - À propos
     </p></a>
+  </div>
+
+  <div class="footer__info">
     <p>Département MMI Montbéliard</p>
-    <img src="public/icones/logo_mmi.svg" alt="Logo MMI">
+    <img class="footer__logo" src="public/icones/logo_mmi.svg" alt="Logo MMI">
     <p>4 Place Tharradin, 25200 Montbéliard</p>
+  </div>
+
     <img src="public/icones/chevrons_up_1.svg" alt="Flèche pour remonter dans la page">
+    
+  <div class="footer__social">
     <p>theopasquarelli68@gmail.com</p>
     <p>Me suivre</p>
     <img src="public/icones/instagram.svg" alt="Logo Instagram">
@@ -122,9 +132,11 @@
     <img src="public/icones/facebook.svg" alt="Logo Facebook">
     <img src="public/icones/Drapeau_fr.svg" alt="Drapeau français">
     <img src="public/icones/Drapeau_ru.svg" alt="Drapeau du Royaume-Uni">
+  </div>
+    
     <p>Projet réalisé dans le cadre d’un execrice pédagogique au département MMI de Montbéliard</p>
 
-    </footer>
+  </footer>
 <!-- Fin du pied de page -->
 
   
