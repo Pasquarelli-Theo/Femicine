@@ -7,10 +7,10 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--bordeaux);
+  background-color: var(--burgundy);
   font-family: var(--font-title);
   font-size: var(--title-menu);
-  transition: all 1s ease;
+  transition: all 1.5s ease;
   transform: translateX(100%);
 }
 
@@ -22,15 +22,15 @@
 
 .menu__list {
   margin-top: 10vh;
-  margin-left: 15vw;
+  margin-left: 10vw;
 }
 
 .menu__item {
-  margin-top: 10%;
+  margin-top: 0%;
 }
 
 .menu__link {
-  color: var(--gris);
+  color: var(--grey);
   text-decoration: none;
 }
 
@@ -45,7 +45,7 @@
 .menu-btn__bar::before,
 .menu-btn__bar::after {
   content: '';
-  background: var(--gris);
+  background: var(--grey);
   height: 2px;
   width: 100%;
   position: absolute;
@@ -65,7 +65,7 @@
 .menu-btn--open .menu-btn__bar,
 .menu-btn--open .menu-btn__bar::before,
 .menu-btn--open .menu-btn__bar::after {
-  background-color: var(--gris);
+  background-color: var(--grey);
   transform: rotate(135deg);
 }
 .menu-btn--open .menu-btn__bar::before,
@@ -77,5 +77,5 @@
 .header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar,
 .header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar::before,
 .header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar::after {
-  background-color: var(--gris);
+  background-color: var(--grey);
 }

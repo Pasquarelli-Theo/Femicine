@@ -9,8 +9,27 @@
 body {
   font-family: var(--font-text);
   font-size: var(--text);
-  line-height: 1.125;
-  background-color: var(--gris);
+  line-height: 1.5;
+  background-color: var(--grey);
+}
+
+#text-art1 {
+  color: var(--grey);
+  background-color: var(--purple);
+}
+
+#text-art2 {
+  color: var(--black);
+  background-color: var(--white);
+}
+
+#text-art3 {
+  color: var(--grey);
+  background-color: var(--burgundy);
+}
+
+.right {
+  float: right;
 }
 
 /* Les règles typographiques générales des titres */
@@ -19,7 +38,7 @@ h2,
 h3 {
   font-family: var(--font-title);
   font-weight: normal;
-  line-height: 1.5625;
+  line-height: 1.5;
 }
 
 h1 {
@@ -28,12 +47,33 @@ h1 {
 
 h2 {
   font-size: var(--title-article);
-  line-height: 1.3125;
+  line-height: 1.3;
 }
 
 h3 {
   font-size: var(--intertitre);
-  line-height: 1.3125;
+  line-height: 1.3;
+}
+
+#link-art1{
+  background-color: var(--purple-link);
+  color: var(--grey);
+}
+
+#link-art2{
+  background-color: var(--white-link);
+}
+
+#link-art3{
+  background-color: var(--burgundy-link);
+  color: var(--grey);
+}
+
+/* Les règles générales qui s'appliquent aux images du site */
+#img_galerie{
+  margin: 12px;
+  height: 250px;
+  width: 179,4;
 }
 
 /* permet d'annuler la mise en forme des bouton qu'applique le navigateur. */

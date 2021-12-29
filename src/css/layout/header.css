@@ -2,7 +2,7 @@
 Flex sert à positionner les éléments de l'en-tête (header__start et header__end) l'un à coté de l'autre alors que la valeur "space-between" de "justify-content" permet des les répartir de part et d'autre de l'écran (l'un à gauche, l'autre à droite)
 */
 .header {
-    background-color: var(--bordeaux);
+    background-color: var(--burgundy);
     position: fixed;
     top: 0;
     left: 0;

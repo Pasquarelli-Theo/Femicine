@@ -1,14 +1,15 @@
 :root{
 /* Styles de couleur */
---bordeaux:         rgba(124, 8, 8, 1);
---violet:           rgba(91, 30, 119, 1);
---gris:             rgba(245, 245, 245, 1);
---noir-lien:        rgba(0, 0, 0, 0.800000011920929);
+--burgundy :        rgba(124, 8, 8, 1);
+--purple:           rgba(91, 30, 119, 1);
+--grey:             rgba(245, 245, 245, 1);
+--black-link:       rgba(0, 0, 0, 0.800000011920929);
 --gray-black:       rgba(0, 0, 0, 1);
---violet-lien:      rgba(91, 30, 119, 0.800000011920929);
---blanc:            rgba(255, 255, 255, 1);
---blanc-lien:       rgba(255, 255, 255, 0.800000011920929);
---bordeaux-lien:    rgba(124, 8, 8, 0.800000011920929);
+--purple-link:      rgba(91, 30, 119, 0.800000011920929);
+--white:            rgba(255, 255, 255, 1);
+--white-link:       rgba(255, 255, 255, 0.800000011920929);
+--burgundy-link:    rgba(124, 8, 8, 0.800000011920929);
+--figcaption:       rgba(128, 128, 128, 1);
 
 /* Tailles de police de caractère */
 --text: 14px;
@@ -18,7 +19,7 @@
 --chapo: 16px;
 --title-article: 31px;
 --footer: 11px;
---title-menu: 20px;
+--title-menu: 23px;
 
 /* Polices de caractère */
 --font-text: 'Spinnaker';

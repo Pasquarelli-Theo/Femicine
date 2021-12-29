@@ -11,7 +11,7 @@
 
 <!-- Déclaration de la feuille de style -->
 
-    <link rel="stylesheet" href="src/css/style.css">
+<link rel="stylesheet" href="src/css/style.css">
 
 <!-- Chargement de la librairie Alpine JS -->
 
@@ -28,10 +28,15 @@
 
 <!-- En-tête de la page -->
 
-    <header>
+<header class="header" 
+            :class="atTop && 'header--atTop'"
+            @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
 
-      <a href='/'> <img src="public/icones/Titre.svg" alt="Logo Fémiciné"></a>
-       
+      <div class="header__start">
+
+      <h1><a href='/'> <img src="public/icones/Titre.svg" alt="Logo Fémiciné"></a></h1>
+      </div>
+
       <div class="header__end">
 
       <button class="header__menu-btn menu-btn"
@@ -44,14 +49,22 @@
 
       <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
         <ul class="menu__list list-unstyled">
-          <li><a href="Index.html">Accueil</a></li>
-          <li><a href="Article feministe.html">Une féministe au cinéma</a></li>
-          <li><a href="Article oeuvre.html">De l’histoire au grand écran</a></li>
-          <li><a href="Article histoire.html">Les suffragettes, une histoire de droit de vote</a></li>
-          <li><a href="Frise.html">Frise chronologique</a></li>
-          <li><a href="Galerie.html">Galerie du féminisme</a></li>
-          <li><a href="Autres projets.html">Autres projets</a></li>
-          <li><a href="À propos.html">À propos/Me contacter</a></li>
+          <li class="menu__item"><a class="menu__link" href="Index.html">Accueil</a></li>
+          <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
+          <li class="menu__item"><a class="menu__link" href="Article feministe.html">Une féministe au cinéma</a></li>
+          <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
+          <li class="menu__item"><a class="menu__link" href="Article oeuvre.html">De l’histoire au grand écran</a></li>
+          <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
+          <li class="menu__item"><a class="menu__link" href="Article histoire.html">Les suffragettes, une histoire de droit de vote</a></li>
+          <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
+          <li class="menu__item"><a class="menu__link" href="Frise.html">Frise chronologique</a></li>
+          <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
+          <li class="menu__item"><a class="menu__link" href="Galerie.html">Galerie du féminisme</a></li>
+          <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
+          <li class="menu__item"><a class="menu__link" href="Autres projets.html">Autres projets</a></li>
+          <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
+          <li class="menu__item"><a class="menu__link" href="À propos.html">À propos/Me contacter</a></li>
+          <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
         </ul>
       </nav>
 
@@ -61,14 +74,12 @@
 
 <!-- Fin de l'en-tête de page -->
 
-<!-- Fin de l'en-tête de page -->
-
 <!-- Galerie -->
 
     <main>
       <h2>Galerie du féminisme</h2>
       <img src="public/icones/Ligne_hori.svg" alt="Ligne horizontale"> <br>
-      <img src="public/img/EW_Galerie.webp" alt="Photo de l'actrice Emma Watson">
+      <img src="public/img/EW_Galerie.webp" alt="Photo de l'actrice Emma Watson" id="img_galerie">
       <p>Emma Watson est une actrice britannique née le 15 avril 1990 et est devenue mondialement connue grâce au rôle de Hermione Granger dans la saga Harry Potter. L’actrice à également fait de nombreuses interventions féministe, participé à de nombreux évennement pour l’égalité homme-femme, etc… </p>
       <p>Elle a également été nommée Ambassadrice de bonne volonté d’ONU Femmes et a participé aux campagnes CAMFED  et HeForShe de l’ONU.</p>
       
@@ -76,12 +87,12 @@
       <img src="public/icones/points.svg" alt="Essemble de points voilets"><br>
 
       <p>Rosa Parks est née le 4 février 1913 en Alabama et est décédée le 24 octobre 2005 à 92 ans, dans le Michigan. Elle est une militante des droits civiques et pour les droits de la personne humaine, elle a lutté pendant de nombreuses années contre la ségrégation raciale. En 1955 Rosa Parks a refusé de céder sa place à une</p>
-      <img src="public/img/RS_Galerie.webp" alt="Photo de Rosa Parks">
+      <img src="public/img/RS_Galerie.webp" alt="Photo de Rosa Parks" id="img_galerie">
       <p>femme blanche dans un bus, cela lui a value une amende et c’est par la suite qu’elle a engagé sa lutte pour la défense des droits civiques.</p>
       
       <br><img src="public/icones/Ligne_hori.svg" alt="Ligne horizontale"> <br>
 
-      <img src="public/img/ODG_Galerie.webp" alt="Photo de Olympe de Gouges">
+      <img src="public/img/ODG_Galerie.webp" alt="Photo de Olympe de Gouges" id="img_galerie">
       <p>Olympe de Gouges, de son vrai nom Marie Gouze, est née le 7 mai 1748 et exécutée le 3 novembre 1793 à 45 ans,  en France est une écrivaine, philosophe, journaliste et femme politique. Mais elle est surtout l’une voire la plus grandes figures du féminisme en France, elle a rédigé de nombreux écrit en faveur des </p>
       <p>droits de la femme dont la Déclaration des droits de la femme et de la citoyenne en 1791.</p>
       
@@ -89,12 +100,12 @@
       <img src="public/icones/Ligne_hori.svg" alt="Ligne horizontale"><br>
       
       <p>Simone de Beauvoir est née le 9 janvier 1908 et décédée le 14 avril 1986 à 78 ans, à Paris en France, elle est une philosophe, romancière et essayiste française. Elle a écrit plusieurs essais mais l’un des plus célèbre reste l’essai Le Deuxième Sexe en 1949. Elle a également participé à la fin des années </p>
-      <img src="public/img/SDB_Galerie.webp" alt="Photo de Simone de Beauvoir">
+      <img src="public/img/SDB_Galerie.webp" alt="Photo de Simone de Beauvoir" id="img_galerie">
       <p>70 au Mouvement de libération des femmes.</p>
 
       <br><img src="public/icones/Ligne_hori.svg" alt="Ligne horizontale"><br>
 
-      <img src="public/img/SV_Galerie.webp" alt="Photo de Simone Veil">
+      <img src="public/img/SV_Galerie.webp" alt="Photo de Simone Veil" id="img_galerie">
       <p>Simone Veil est née 13 juillet 1927 et est décédée le 30 juin 2017 à 89 ans, en France, elle est une magistrate et une femme politique française. Elle a été ministre de la Santé, présidente du Parlement européen, député européenne, “ministre d'État, ministre des Affaires Sociales, de la Santé et de la Ville” et enfin membre </p>
       <p>du Conseil constitutionnel français. Simone Veil est notamment connue pour son combat pour la dépénalisation de l’avortement de 1974 à 1975.</p>
 
@@ -102,7 +113,7 @@
       <img src="public/icones/points.svg" alt="Essemble de points voilets"><br>
 
       <p>Elizabeth Cady Stanton est née le 12 novembre 1815 et décédée le 26 octobre 1902 à 86 ans, aux Etats-Unis, elle est une écrivaine, abolitionniste et suffragiste américaine. Elle est devenue un figures du féminisme au états-Unis grâce à son combat pour le droit de vote et le droit des femmes. Elle a </p>
-      <img src="public/img/ECS_Galerie.webp" alt="Photo de Elizabeth Cady Santon">
+      <img src="public/img/ECS_Galerie.webp" alt="Photo de Elizabeth Cady Santon" id="img_galerie">
       <p>Elizabeth Cady Stanton est née le 12 novembre 1815 et décédée le 26 octobre 1902 à 86 ans, aux Etats-Unis, elle est une écrivaine, abolitionniste et suffragiste américaine. Elle est devenue un figures du féminisme au états-Unis grâce à son combat pour le droit de vote et le droit des femmes. Elle a </p>
 
 <!-- Fin de la Galerie -->
@@ -135,23 +146,35 @@
 <img src="public/img/Vers_frise.webp" alt="aperçu de la frise chronologique">
 <a class="#" href="Frise.html"><p>Voir plus ...</p></a>
 
-<footer>
-  <a class="#" href="À propos.html"><p>Contact : 
-      - Me contacter
-      - À propos
-  </p></a>
-  <p>Département MMI Montbéliard</p>
-  <img src="public/icones/logo_mmi.svg" alt="Logo MMI">
-  <p>4 Place Tharradin, 25200 Montbéliard</p>
-  <img src="public/icones/chevrons_up_1.svg" alt="Flèche pour remonter dans la page">
-  <p>theopasquarelli68@gmail.com</p>
-  <p>Me suivre</p>
-  <img src="public/icones/instagram.svg" alt="Logo Instagram">
-  <img src="public/icones/twitter.svg" alt="Logo Twitter">
-  <img src="public/icones/facebook.svg" alt="Logo Facebook">
-  <img src="public/icones/Drapeau_fr.svg" alt="Drapeau français">
-  <img src="public/icones/Drapeau_ru.svg" alt="Drapeau du Royaume-Uni">
-  <p>Projet réalisé dans le cadre d’un execrice pédagogique au département MMI de Montbéliard</p>
+<footer class="footer">
+
+  <div class="footer__contact">  
+    <a class="#" href="À propos.html">
+  <p class="footer__title">Contact : 
+<br>        - Me contacter
+<br>        - À propos
+    </p></a>
+  </div>
+
+  <div class="footer__info">
+    <p>Département MMI Montbéliard</p>
+    <img class="footer__logo" src="public/icones/logo_mmi.svg" alt="Logo MMI">
+    <p>4 Place Tharradin, 25200 Montbéliard</p>
+  </div>
+
+    <img src="public/icones/chevrons_up_1.svg" alt="Flèche pour remonter dans la page">
+    
+  <div class="footer__social">
+    <p>theopasquarelli68@gmail.com</p>
+    <p>Me suivre</p>
+    <img src="public/icones/instagram.svg" alt="Logo Instagram">
+    <img src="public/icones/twitter.svg" alt="Logo Twitter">
+    <img src="public/icones/facebook.svg" alt="Logo Facebook">
+    <img src="public/icones/Drapeau_fr.svg" alt="Drapeau français">
+    <img src="public/icones/Drapeau_ru.svg" alt="Drapeau du Royaume-Uni">
+  </div>
+    
+    <p>Projet réalisé dans le cadre d’un execrice pédagogique au département MMI de Montbéliard</p>
 
   </footer>
 <!-- Fin du pied de page -->

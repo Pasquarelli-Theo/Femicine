@@ -8,8 +8,8 @@ img {
   }
   
   figcaption {
-    font-size: var(--text-sm);
-    color: var(--gray-600);
+    font-size: var(--legende);
+    color: var(--figcaption);
   }
 
   /* Bug IOS
