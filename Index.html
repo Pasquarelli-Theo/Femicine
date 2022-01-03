@@ -28,6 +28,7 @@
 
 <!-- En-tête de la page -->
 
+<div id="header">
 <header class="header" 
             :class="atTop && 'header--atTop'"
             @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
@@ -71,6 +72,7 @@
 <!-- Fin du menu principal -->
       </div>
     </header>
+  </div>
 
 <!-- Fin de l'en-tête de page -->
 
@@ -78,25 +80,24 @@
 
     <main>
 
-      <p>    Un club de football, le droit de vote et Star Wars. Trois éléments qui n’ont de prime abord rien en commun, mais une chose les réunit, le féminisme. En grande expansion ces dernières années, le féminisme est devenu très important dans la société actuelle. En effet nous pouvons régulièrement assister à des actions féministe venant de groupe ou même d’un simple rassemblement. Mais il y a une chose à ne pas oublier, le chemin à été long pour en arriver là et de nombreux combats ont été nécessaire. L’un des plus importants est sans doute celui pour le droit de vote des femmes qui a commencé il y a de très nombreuses années et n’est toujours pas fini dans certains pays. De nombreuses disciplines ont aussi eu leur importance dans la lutte féministe, l’une d’entre elle est le cinéma et d’ailleurs le sujet principale de ce site. </p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <p>       Un club de football, le droit de vote et Star Wars. Trois éléments qui n’ont de prime abord rien en commun, mais une chose les réunit, le féminisme. En grande expansion ces dernières années, le féminisme est devenu très important dans la société actuelle. En effet nous pouvons régulièrement assister à des actions féministe venant de groupe ou même d’un simple rassemblement. Mais il y a une chose à ne pas oublier, le chemin à été long pour en arriver là et de nombreux combats ont été nécessaire. L’un des plus importants est sans doute celui pour le droit de vote des femmes qui a commencé il y a de très nombreuses années et n’est toujours pas fini dans certains pays. De nombreuses disciplines ont aussi eu leur importance dans la lutte féministe, l’une d’entre elle est le cinéma et d’ailleurs le sujet principale de ce site. </p>
       
-      <img src="public/img/Lien_NP.webp" alt="Natalie Portman enfant et adulte">
-      <h2 id="link-art1" >Une féministe au cinéma
-      <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale"></h2>
-      <p id="text-art1">Depuis de très nombreuses années des personnalités sont engagé dans la lutte féministe comme l’actrice Natalie Portman.
-      <a id="text-art1" class="right" :class="#" href="Article feministe.html">Voir plus ...</p></a>
+      <a class="#" href="Article feministe.html"><img src="public/icones/Article_NP.svg" alt="Natalie Portman enfant et adulte"></a>
 
-      <img src="public/img/Lien_film.webp" alt="Affiche du film Les Suffragettes">
-      <h2 id="link-art2" >De l’histoire au grand écran
-      <img src="public/icones/Ligne_hori.svg" alt="Ligne horizontale"></h2>
-      <p id="text-art2">Réalisé par Sarah Gavron, le film Les Suffragettes retrace la fin de la lutte des suffragettes à la fin du XXe siècle.
-      <a id="text-art2" class="right" :class="#" href="Article oeuvre.html">Voir plus ...</p></a>
+      <a class="#" href="Article oeuvre.html"><img src="public/icones/Article_film.svg" alt="Affiche du film Les Suffragettes"></a>
 
-      <img src="public/img/Lien_Suffragettes.webp" alt="Photo d'un groupe de suffragettes">
-      <h2 id="link-art3" >Les suffragettes, un histoire de droit de vote
-      <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale"></h2>
-      <p id="text-art3" >Les suffragettes sont un groupe de militantes qui ont lutté pour le droit de vote des femmes durant plusieurs années.
-      <a id="text-art3" class="right" : class="#" href="Article histoire.html">Voir plus ...</p></a>
+      <a class="#" href="Article histoire.html"><img src="public/icones/Article_histoire.svg" alt="Photo d'un groupe de suffragettes"></a>
     
       <h2>Vidéo</h2>
       <img src="public/icones/Ligne_hori.svg" alt="Ligne horizontale">
@@ -106,46 +107,57 @@
       <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale"><br>
       <img src="public/img/EW_Galerie.webp" alt="Photo de Emma Watson" id="img_galerie">
       <img src="public/img/RS_Galerie.webp" alt="Photo de Rosa Parks" id="img_galerie">
-      <a id="text-art1" class="right" :class="#" href="Galerie.html"><p>Voir plus ...</p></a>
+      <a id="text-art1" class="#" href="Galerie.html"><p class="right">Voir plus ...</p></a>
       </div>
 
     </main>
 
 <!-- Fin du contenu principal -->
 
-<br>
-
 <!-- Pied de page -->
 
   <footer class="footer">
 
+    <div class="footer_fleche">
+    <a href="#header"><img src="public/icones/chevrons_up_1.svg" alt="Flèche pour remonter dans la page"></a>
+  </div>
+
   <div class="footer__contact">  
     <a class="#" href="À propos.html">
-  <p class="footer__title">Contact : 
+  <p>Contact : 
 <br>        - Me contacter
 <br>        - À propos
     </p></a>
-  </div>
+</div>
+ <p>theopasquarelli68@gmail.com</p>
 
   <div class="footer__info">
+  <a class="/" href="http://mmimontbeliard.com/">
     <p>Département MMI Montbéliard</p>
-    <img class="footer__logo" src="public/icones/logo_mmi.svg" alt="Logo MMI">
+    <img src="public/icones/logo_mmi.svg" alt="Logo MMI">
     <p>4 Place Tharradin, 25200 Montbéliard</p>
+  </a>
   </div>
 
-    <img src="public/icones/chevrons_up_1.svg" alt="Flèche pour remonter dans la page">
-    
-  <div class="footer__social">
-    <p>theopasquarelli68@gmail.com</p>
-    <p>Me suivre</p>
-    <img src="public/icones/instagram.svg" alt="Logo Instagram">
-    <img src="public/icones/twitter.svg" alt="Logo Twitter">
-    <img src="public/icones/facebook.svg" alt="Logo Facebook">
-    <img src="public/icones/Drapeau_fr.svg" alt="Drapeau français">
-    <img src="public/icones/Drapeau_ru.svg" alt="Drapeau du Royaume-Uni">
+  <br>
+  <div>
+    <p>Me suivre : </p>
+    <ul class="footer__list list-unstyled">
+      <li><a href="https://facebook.com" aria-label="facebook"><img src="public/icones/facebook.svg" alt="icone facebook"></a></li>
+      <li><a href="https://instagram.com" aria-label="instagram"><img src="public/icones/instagram.svg" alt="icone instagram"></a></li>
+      <li><a href="https://twitter.com" aria-label="twitter"><img src="public/icones/twitter.svg" alt="icone twitter"></a></li>
+    </ul>
   </div>
+
+  <br>
+<ul class="footer__list list-unstyled">
+  <li><a class="#" href="Index.html"><img src="public/icones/Drapeau_fr.svg" alt="Drapeau français"></a></li>
+  <li><a class="#" href="Index_ang.html"><img src="public/icones/Drapeau_ru.svg" alt="Drapeau du Royaume-Uni"></a></li>
+</ul>
+
+<br>
     
-    <p>Projet réalisé dans le cadre d’un execrice pédagogique au département MMI de Montbéliard</p>
+    <p class="mention_footer">Projet réalisé dans le cadre d’un execrice pédagogique au département MMI de Montbéliard</p>
 
   </footer>
 <!-- Fin du pied de page -->

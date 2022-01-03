@@ -28,51 +28,75 @@
 
 <!-- En-tête de la page -->
 
-<header class="header" 
-            :class="atTop && 'header--atTop'"
-            @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
+<div id="header">
+  <header class="header" 
+              :class="atTop && 'header--atTop'"
+              @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
+  
+        <div class="header__start">
+  
+        <h1><a href='/'> <img src="public/icones/Titre.svg" alt="Logo Fémiciné"></a></h1>
+        </div>
+  
+        <div class="header__end">
+  
+        <button class="header__menu-btn menu-btn"
+                  @click="menuIsOpen = !menuIsOpen"
+                  :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+        </button>
+  
+  <!-- Menu principal -->
+  
+        <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+          <ul class="menu__list list-unstyled">
+            <li class="menu__item"><a class="menu__link" href="Index.html">Accueil</a></li>
+            <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
+            <li class="menu__item"><a class="menu__link" href="Article feministe.html">Une féministe au cinéma</a></li>
+            <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
+            <li class="menu__item"><a class="menu__link" href="Article oeuvre.html">De l’histoire au grand écran</a></li>
+            <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
+            <li class="menu__item"><a class="menu__link" href="Article histoire.html">Les suffragettes, une histoire de droit de vote</a></li>
+            <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
+            <li class="menu__item"><a class="menu__link" href="Frise.html">Frise chronologique</a></li>
+            <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
+            <li class="menu__item"><a class="menu__link" href="Galerie.html">Galerie du féminisme</a></li>
+            <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
+            <li class="menu__item"><a class="menu__link" href="Autres projets.html">Autres projets</a></li>
+            <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
+            <li class="menu__item"><a class="menu__link" href="À propos.html">À propos/Me contacter</a></li>
+            <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
+          </ul>
+        </nav>
+  
+  <!-- Fin du menu principal -->
+        </div>
+      </header>
+    </div>
+  
+  <!-- Fin de l'en-tête de page -->
 
-      <div class="header__start">
+<!-- Contenu principal de la page -->
 
-      <h1><a href='/'> <img src="public/icones/Titre.svg" alt="Logo Fémiciné"></a></h1>
-      </div>
+<main>
 
-      <div class="header__end">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <img src="public/icones/Frise.svg" alt="Frise chronologique du féminisme">
 
-      <button class="header__menu-btn menu-btn"
-                @click="menuIsOpen = !menuIsOpen"
-                :class="menuIsOpen && 'menu-btn--open'">
-          <span class="menu-btn__bar"></span>
-      </button>
+</main>
 
-<!-- Menu principal -->
+<!-- Fin du contenu principal -->
 
-      <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
-        <ul class="menu__list list-unstyled">
-          <li class="menu__item"><a class="menu__link" href="Index.html">Accueil</a></li>
-          <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
-          <li class="menu__item"><a class="menu__link" href="Article feministe.html">Une féministe au cinéma</a></li>
-          <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
-          <li class="menu__item"><a class="menu__link" href="Article oeuvre.html">De l’histoire au grand écran</a></li>
-          <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
-          <li class="menu__item"><a class="menu__link" href="Article histoire.html">Les suffragettes, une histoire de droit de vote</a></li>
-          <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
-          <li class="menu__item"><a class="menu__link" href="Frise.html">Frise chronologique</a></li>
-          <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
-          <li class="menu__item"><a class="menu__link" href="Galerie.html">Galerie du féminisme</a></li>
-          <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
-          <li class="menu__item"><a class="menu__link" href="Autres projets.html">Autres projets</a></li>
-          <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
-          <li class="menu__item"><a class="menu__link" href="À propos.html">À propos/Me contacter</a></li>
-          <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
-        </ul>
-      </nav>
-
-<!-- Fin du menu principal -->
-      </div>
-    </header>
-
-<!-- Fin de l'en-tête de page -->
+<br>
 
 <!-- Pied de page -->
 
@@ -84,35 +108,48 @@
   <a id="text-art1" class="right" :class="#" href="Galerie.html"><p>Voir plus ...</p></a>
   </div>
   
-<footer class="footer">
+  <footer class="footer">
+
+    <div class="footer_fleche">
+    <a href="#header"><img src="public/icones/chevrons_up_1.svg" alt="Flèche pour remonter dans la page"></a>
+  </div>
 
   <div class="footer__contact">  
     <a class="#" href="À propos.html">
-  <p class="footer__title">Contact : 
+  <p>Contact : 
 <br>        - Me contacter
 <br>        - À propos
     </p></a>
-  </div>
+</div>
+ <p>theopasquarelli68@gmail.com</p>
 
   <div class="footer__info">
+  <a class="/" href="http://mmimontbeliard.com/">
     <p>Département MMI Montbéliard</p>
-    <img class="footer__logo" src="public/icones/logo_mmi.svg" alt="Logo MMI">
+    <img src="public/icones/logo_mmi.svg" alt="Logo MMI">
     <p>4 Place Tharradin, 25200 Montbéliard</p>
+  </a>
   </div>
 
-    <img src="public/icones/chevrons_up_1.svg" alt="Flèche pour remonter dans la page">
-    
-  <div class="footer__social">
-    <p>theopasquarelli68@gmail.com</p>
-    <p>Me suivre</p>
-    <img src="public/icones/instagram.svg" alt="Logo Instagram">
-    <img src="public/icones/twitter.svg" alt="Logo Twitter">
-    <img src="public/icones/facebook.svg" alt="Logo Facebook">
-    <img src="public/icones/Drapeau_fr.svg" alt="Drapeau français">
-    <img src="public/icones/Drapeau_ru.svg" alt="Drapeau du Royaume-Uni">
+  <br>
+  <div>
+    <p>Me suivre : </p>
+    <ul class="footer__list list-unstyled">
+      <li><a href="https://facebook.com" aria-label="facebook"><img src="public/icones/facebook.svg" alt="icone facebook"></a></li>
+      <li><a href="https://instagram.com" aria-label="instagram"><img src="public/icones/instagram.svg" alt="icone instagram"></a></li>
+      <li><a href="https://twitter.com" aria-label="twitter"><img src="public/icones/twitter.svg" alt="icone twitter"></a></li>
+    </ul>
   </div>
+
+  <br>
+<ul class="footer__list list-unstyled">
+  <li><a class="#" href="Index.html"><img src="public/icones/Drapeau_fr.svg" alt="Drapeau français"></a></li>
+  <li><a class="#" href="Index_ang.html"><img src="public/icones/Drapeau_ru.svg" alt="Drapeau du Royaume-Uni"></a></li>
+</ul>
+
+<br>
     
-    <p>Projet réalisé dans le cadre d’un execrice pédagogique au département MMI de Montbéliard</p>
+    <p class="mention_footer">Projet réalisé dans le cadre d’un execrice pédagogique au département MMI de Montbéliard</p>
 
   </footer>
 <!-- Fin du pied de page -->

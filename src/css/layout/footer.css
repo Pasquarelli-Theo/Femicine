@@ -2,32 +2,28 @@
     background-color: var(--gray-black);
     color: var(--white);
     padding: var(--space4x) var(--space3x);
+    font-size: var(--footer);
   }
   
   footer a {
     color: var(--gray-400);
     text-decoration: none;
   }
-  
+
+  .mention_footer {
+    font-size: var(--legende);
+    margin-bottom: var(--space3x);
+  }
+
   .footer__list {
     display: flex;
-    gap: var(--space3x);
+    gap: var(--space2x);
+  }
+
+  .footer_fleche {
+    float: right;
   }
   
-  .footer__list img {
-    filter: invert(60%);
-  }
-  
-  .footer__address {
-    font-style: normal;
-  }
-  
-  .footer__title {
-    margin-top: 0;
-   /* text-transform: uppercase;*/
-    font-size: var(--footer);
-  }
-  
-  .footer > *:not(:first-child) {
-    margin-top: var(--space3x);
-  }
+  /*.footer > *:not(:first-child) {
+    margin-top: var(--space1x);
+  }*/

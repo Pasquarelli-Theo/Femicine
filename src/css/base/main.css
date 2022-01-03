@@ -29,7 +29,7 @@ body {
 }
 
 .right {
-  float: right;
+  margin: 2%;
 }
 
 /* Les règles typographiques générales des titres */
@@ -73,9 +73,13 @@ h3 {
 #img_galerie{
   margin: 12px;
   height: 250px;
-  width: 179,4;
+  width: 179,4px;
 }
 
+#logo{
+  height: 32,05px;
+  width: 280,31px;
+}
 /* permet d'annuler la mise en forme des bouton qu'applique le navigateur. */
 button {
   -webkit-appearance: none;
