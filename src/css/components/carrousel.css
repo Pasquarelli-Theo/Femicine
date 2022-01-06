@@ -4,26 +4,27 @@
     row-gap: 0px;                                    /* Espacement entre les lignes */
     column-gap: 0px;                                /* Espacement entre les colonnes */
     grid-auto-rows: minmax(100px, auto);
+    margin: 7,5px;
 }
 
 .carrousel {
     grid-column: 2;
     grid-row: 2;
-    width: 250px;
+    width: 350px;
     padding: 0px;
     position: relative;
     overflow: hidden;
 }
 
 .images4 {
-    width: 250px;
-    height: 405px;
+    width: 350px;
+    height: 567px;
     left:0;
 }
 
 .images4 img {
-    width: 250px;
-    height: 405px;
+    width: 350px;
+    height: 567px;
 }
 
 .image4 {
