@@ -1,23 +1,22 @@
 function carrousel() {
-  
-	var imagesfilms = document.querySelectorAll('.imagesfilms');
+    var images4 = document.querySelectorAll('.image4');
     let d = 2000;
     let delta = 1000;
 
-    imagesfilms.forEach(function(img,indice) {
-        img.style.zIndex = imagesfilms.length - indice;
+    images4.forEach(function(img,indice) {
+        img.style.zIndex = images4.length - indice;
     });
 
-    let animfilms = anime.timeline({
+    let anim4 = anime.timeline({
         loop: true,
-        delay: 2
+        delay: 0
     });
 
-    animfilms.add({
-        targets: imagesfilms,
-        translateX: [{value: '242', duration: d},
-                     {value: '-242', duration: 0, delay: function(img,ind) {
-                         if (ind == 0) return (5*delta)+(4*d); 
+    anim4.add({
+        targets: images4,
+        translateX: [{value: '250', duration: d},
+                     {value: '-250', duration: 0, delay: function(img,ind) {
+                         if (ind == 0) return (5*delta)+(4*d);
                          if (ind == 1) return (4*delta)+(3*d);
                          if (ind == 2) return (3*delta)+(2*d);
                          if (ind == 3) return (2*delta)+d;
@@ -25,7 +24,7 @@ function carrousel() {
                          return 0;
                      }},
                      {value: '0', duration: function(img,ind) {
-                         if (ind == 6) return 0;
+                         if (ind == 5) return 0;
                          return d;
                      }}],
         easing: 'linear',
@@ -35,9 +34,8 @@ function carrousel() {
             if (ind == 2) return (3*delta)+(2*d);
             if (ind == 3) return (4*delta)+(3*d);
             if (ind == 4) return (5*delta)+(4*d);
-            if (ind == 5) return (6*delta)+(5*d);
-            if (ind == 6) return (7*delta)+(6*d);
-            return (8*delta)+(7*d);
+            return (6*delta)+(5*d);
         }
-    });	
+    });
+	
 }

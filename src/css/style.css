@@ -24,5 +24,8 @@
 @import "components/infos.css";
 @import "components/button.css";
 @import "components/card.css";
-@import "components/carousel.css";
+@import "components/carrousel.css";
+
+/*JavaScript*/
+@import url("/src/js/fonctions.js");
 

@@ -19,3 +19,4 @@ pour faire disparaître le scroll sur safari IOS */
 .noscroll body {
   overflow: hidden;
 }
+

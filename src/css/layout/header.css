@@ -7,7 +7,7 @@ Flex sert à positionner les éléments de l'en-tête (header__start et header__
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 6;
     padding: var(--space1x);
     display: flex;
     justify-content: space-between;

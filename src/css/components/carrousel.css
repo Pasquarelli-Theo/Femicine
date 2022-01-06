@@ -1,0 +1,34 @@
+.carrousel-grid {
+    display: grid;                                    /* Disposition en grille CSS */
+    grid-template-columns: 1fr 2fr 1fr;                /* Tailles des colonnes : chaque ligne contient 3 cellules */
+    row-gap: 0px;                                    /* Espacement entre les lignes */
+    column-gap: 0px;                                /* Espacement entre les colonnes */
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.carrousel {
+    grid-column: 2;
+    grid-row: 2;
+    width: 250px;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.images4 {
+    width: 250px;
+    height: 405px;
+    left:0;
+}
+
+.images4 img {
+    width: 250px;
+    height: 405px;
+}
+
+.image4 {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 0;
+}
