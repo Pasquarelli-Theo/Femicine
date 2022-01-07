@@ -10,21 +10,21 @@
 .carrousel {
     grid-column: 2;
     grid-row: 2;
-    width: 350px;
+    width: 375px;
     padding: 0px;
     position: relative;
     overflow: hidden;
 }
 
 .images4 {
-    width: 350px;
-    height: 567px;
+    width: 375px;
+    height: 607px;
     left:0;
 }
 
 .images4 img {
-    width: 350px;
-    height: 567px;
+    width: 375px;
+    height: 607px;
 }
 
 .image4 {

@@ -48,26 +48,18 @@
   
   <!-- Menu principal -->
   
-        <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
-          <ul class="menu__list list-unstyled">
-            <li class="menu__item"><a class="menu__link" href="Index.html">Accueil</a></li>
-            <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
-            <li class="menu__item"><a class="menu__link" href="Article feministe.html">Une féministe au cinéma</a></li>
-            <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
-            <li class="menu__item"><a class="menu__link" href="Article oeuvre.html">De l’histoire au grand écran</a></li>
-            <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
-            <li class="menu__item"><a class="menu__link" href="Article histoire.html">Les suffragettes, une histoire de droit de vote</a></li>
-            <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
-            <li class="menu__item"><a class="menu__link" href="Frise.html">Frise chronologique</a></li>
-            <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
-            <li class="menu__item"><a class="menu__link" href="Galerie.html">Galerie du féminisme</a></li>
-            <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
-            <li class="menu__item"><a class="menu__link" href="Autres projets.html">Autres projets</a></li>
-            <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
-            <li class="menu__item"><a class="menu__link" href="À propos.html">À propos/Me contacter</a></li>
-            <img src="public/icones/Ligne_hori_grise.svg" alt="Ligne horizontale">
-          </ul>
-        </nav>
+  <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+    <ul class="menu__list list-unstyled">
+      <li class="menu__item"><a class="menu__link" href="Index.html">Accueil</a></li>
+      <li class="menu__item"><a class="menu__link" href="Article feministe.html">Une féministe au cinéma</a></li>
+      <li class="menu__item"><a class="menu__link" href="Article oeuvre.html">De l’histoire au grand écran</a></li>
+      <li class="menu__item"><a class="menu__link" href="Article histoire.html">Les suffragettes, une histoire de droit de vote</a></li>
+      <li class="menu__item"><a class="menu__link" href="Frise.html">Frise chronologique</a></li>
+      <li class="menu__item"><a class="menu__link" href="Galerie.html">Galerie du féminisme</a></li>
+      <li class="menu__item"><a class="menu__link" href="Autres projets.html">Autres projets</a></li>
+      <li class="menu__item"><a class="menu__link" href="À propos.html">À propos/Me contacter</a></li>
+    </ul>
+  </nav>
   
   <!-- Fin du menu principal -->
         </div>
@@ -91,43 +83,25 @@
 
   <h2>Contact</h2>
  <img src="public/icones/Ligne_hori.svg" alt="Ligne horizontale de séparation">
- <p class="required" x-data="{cText: 'white', cFond: 'red', cChange: 'blue'}">
-  Prénom :
-  <br><input type="text" 
-  id="obligatoire"
-  x-ref="champ"/>
-</p>
-  
-<p class="required" x-data="{cText: 'white', cFond: 'red', cChange: 'blue'}">
-  Nom :
-  <br><input type="text" 
-  id="obligatoire"
-  x-ref="champ"/>
-</p>
 
-<p class="required" x-data="{cText: 'white', cFond: 'red', cChange: 'blue'}">
-  E-mail :
-  <br><input type="text" 
-  id="obligatoire"
-  x-ref="champ"/>
-</p>
+<form>
+<br>
+  <input type="text" placeholder="Prénom"> <br> <br> 
 
-<p class="required" x-data="{cText: 'white', cFond: 'red', cChange: 'blue'}">
-  Message :
-  <br><input type="text" 
-  id="obligatoire"
-  x-data="{l: '1000px', l0:'500px'}"
-  x-ref="champ"/>
-</p>
+  <input type="text" placeholder="Nom"> <br> <br> 
 
-<a class="#" href="À propos.html"><p>Envoyer</p></a>
+  <input type="text" placeholder="E-mail"> <br> <br>
+
+  <textarea name="" id="" cols="40" rows="5" placeholder="Votre Message"></textarea><br><br>
+
+  <button class="envoyer">Envoyer</button>
+
+</form>
 
 <p>Vistez les sites de mes camarades en <a class="/" href="Autres projets.html">cliquant ici !</p>
 </main>
 
 <!-- Fin du formulaire de contact -->
-
-<br>
 
 <!-- Pied de page -->
 

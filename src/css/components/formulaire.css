@@ -1,0 +1,32 @@
+.contact {
+    color: var(--figcaption);
+    padding-bottom: 10%;
+}
+
+form {
+padding-left: 5%;
+/*padding-bottom: 100%;*/
+}
+
+input, textarea {
+    border-radius: 2px;
+    background: var(--white);
+    border: none;
+}
+
+::placeholder {
+    color: var(--figcaption);
+  }
+
+.envoyer {
+    color: var(--grey);
+    font-family: var(--font-title);
+    font-size: var(--font-text);
+    background: var(--burgundy);
+    border: var(--grey);
+    text-align: center;
+    right: 10px;
+    border-radius: 2px;
+    width: 305px;
+/*    padding-left: 60%;*/
+} 

@@ -14,8 +14,8 @@ function carrousel() {
 
     anim4.add({
         targets: images4,
-        translateX: [{value: '350', duration: d},
-                     {value: '-350', duration: 0, delay: function(img,ind) {
+        translateX: [{value: '375', duration: d},
+                     {value: '-375', duration: 0, delay: function(img,ind) {
                          if (ind == 0) return (5*delta)+(4*d);
                          if (ind == 1) return (4*delta)+(3*d);
                          if (ind == 2) return (3*delta)+(2*d);

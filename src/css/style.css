@@ -20,11 +20,9 @@
 
 /* Components */
 @import "components/menu.css";
-@import "components/hero.css";
-@import "components/infos.css";
 @import "components/button.css";
-@import "components/card.css";
 @import "components/carrousel.css";
+@import "components/formulaire.css";
 
 /*JavaScript*/
 @import url("/src/js/fonctions.js");
