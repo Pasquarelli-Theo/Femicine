@@ -45,6 +45,12 @@ img {
   width: 375px;
 }
 
+.frise{
+  text-align: center;
+  position: relative;
+  top: 1px;
+}
+
   /* Bug IOS
 => L'overflow doit être appliqué sur l'élément body ET html
 pour faire disparaître le scroll sur safari IOS */
