@@ -10,7 +10,29 @@ img {
   figcaption {
     font-size: var(--legende);
     color: var(--figcaption);
+    position: sticky;
   }
+
+.art__iem--SW1{
+  width: 160px;
+  text-align: center;
+  position: relative;
+  right: -8em;
+}
+
+.art__iem--point2{
+  float: right;
+  text-align: center;
+  position: relative;
+  top: -100px;
+}
+
+.art__iem--point1{
+  float: left;
+  text-align: center;
+  position: relative;
+  top: 55px;
+}
 
   /* Bug IOS
 => L'overflow doit être appliqué sur l'élément body ET html
