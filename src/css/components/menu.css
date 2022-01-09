@@ -26,9 +26,7 @@
 }
 
 .menu__item {
-  margin-top: 0%;
-  border-style: none none solid;
-  border-color: var(--grey);
+  margin: 20px;
 }
 
 .menu__link {
