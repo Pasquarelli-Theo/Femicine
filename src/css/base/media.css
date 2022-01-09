@@ -34,6 +34,17 @@ img {
   top: 55px;
 }
 
+.index__item--vid{
+  width: 322px;
+  height: 164px;
+  text-align: center;
+  position: relative;
+}
+
+.homepage__card{
+  width: 375px;
+}
+
   /* Bug IOS
 => L'overflow doit être appliqué sur l'élément body ET html
 pour faire disparaître le scroll sur safari IOS */
