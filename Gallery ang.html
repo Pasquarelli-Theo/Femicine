@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+  <head>
+    <meta charset="utf-8">
+    <link href="src/css/gabarit.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fémiciné">
+
+    <title>Fémiciné - Galerie</title>
+
+<!-- Déclaration de la feuille de style -->
+
+    <link rel="stylesheet" href="src/css/style.css">
+
+<!-- Chargement de la librairie Alpine JS -->
+
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
+<!-- Chargement de la librairie Anime JS -->
+
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+
+    <script src="src/js/fonctions.js"></script>
+
+  </head>
+  <body x-data="{ atTop : false }">
+
+<!-- En-tête de la page -->
+
+<div id="header">
+<header class="header" 
+            :class="atTop && 'header--atTop'"
+            @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
+
+      <div class="header__start">
+
+      <h1><a href='/'> <img src="public/icones/Titre.svg" alt="Logo Fémiciné"></a></h1>
+      </div>
+
+      <div class="header__end">
+
+      <button class="header__menu-btn menu-btn"
+                @click="menuIsOpen = !menuIsOpen"
+                :class="menuIsOpen && 'menu-btn--open'">
+          <span class="menu-btn__bar"></span>
+      </button>
+
+<!-- Menu principal -->
+
+<nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+  <ul class="menu__list list-unstyled">
+    <li class="menu__item"><a class="menu__link" href="Index_ang.html">Homepage</a></li>
+    <li class="menu__item"><a class="menu__link" href="Article feminist ang.html">A feminist in cinema</a></li>
+    <li class="menu__item"><a class="menu__link" href="Article movie ang.html">From history to the big screen</a></li>
+    <li class="menu__item"><a class="menu__link" href="Article history ang.html">The suffragette, a story of the right to vote</a></li>
+    <li class="menu__item"><a class="menu__link" href="Timeline.html">Timeline</a></li>
+    <li class="menu__item"><a class="menu__link" href="Gallery ang.html">Gallery of feminism</a></li>
+    <li class="menu__item"><a class="menu__link" href="Other projects.html">Other projects</a></li>
+    <li class="menu__item"><a class="menu__link" href="About.html">About Me/Contact Me</a></li>
+  </ul>
+</nav>
+
+<!-- Fin du menu principal -->
+      </div>
+    </header>
+  </div>
+
+  <!-- Galerie -->
+
+  <main>
+    <h2>Galerie du féminisme</h2>
+    <img src="public/icones/Ligne_hori.svg" alt="Horizontal line"> <br>
+    <img src="public/img/EW_Galerie.webp" alt="Photo of the actress Emma Watson" id="img_galerie" style="float:left">
+    <p>Emma Watson is an british actress born on April 15, 1990 who became world-famous with the role of Hermione Granger in the Harry Potter saga. The actress has made many feminist interventions, participeted at many evennement for gender equality, etc… She’s also an UN Women</p>
+    <p>Goodwill Ambassador and participated to the CAMFED campaign and HeForShe campaign.</p>
+    
+    <br><img src="public/icones/Ligne_hori.svg" alt="Horizontal line"> 
+    
+    <img src="public/img/RS_Galerie.webp" alt="Picture of Rosa Parks" id="img_galerie" style="float:right">
+    <p>Rosa Parks, from her complete name Rosa Louise McCauley Parks, was born on February 4, 1913 in Alabama and died on October 24, 2005 at 92 years old in Michigan. She’s a civil and human rights activist, she fighted during many years against racial segregation. In 1955 </p>
+    <p>Rosa Parks refused to give up his seat to a white woman on the bus, it has value for him a fine and it was thereafter that she began her civil rights struggle.</p>
+    
+    <br><img src="public/icones/Ligne_hori.svg" alt="Horizontal line"> <br>
+
+    <img src="public/img/ODG_Galerie.webp" alt="Picture of Olympe de Gouges" id="img_galerie" style="float:left">
+    <p>Olympe de Gouges, from her real name Marie Gouze, was born on May 7, 1748 and executed the 3 november 1793, at 45 years old, in France and was an writer, philosopher, journalist and politician. But she’s above all one of the largest, if not the largest figures of feminism in </p>
+    <p>France, she has written a lot in favor of women's rights including the Declaration of the Rights of Women and Citizens in 1791.</p>
+
+    <img src="public/icones/Ligne_hori.svg" alt="Horizontal line"><br>
+    
+    <img src="public/img/SDB_Galerie.webp" alt="Picture of Simone de Beauvoir" id="img_galerie" style="float:right">
+    <p>Simone de Beauvoir was born on January 9, 1908 and died one April 14, 1986, at 78 years old in Paris, France. She’s a French philosopher, novelist and essayist. She has written many essays but one of the most famous is The Second Sex in 1949. She also participated at the end of</p>
+    <p>the 70’s at the Women's Liberation Movement.</p>
+
+    <br><img src="public/icones/Ligne_hori.svg" alt="Horizontal line"><br>
+
+    <img src="public/img/SV_Galerie.webp" alt="Picture of Simone Veil" id="img_galerie" style="float:left">
+    <p>Simone Veil was born on July 13, 1927 and died on June 30, 2017 at 89 years old in France, she’s a French magistrate and politician. She has been Minister of Health, President of the European Parliament, Member of the European Parliament, "Minister of State, Minister of Social Affairs, Health</p>
+    <p>and Urban Affairs" and finally a member of the French Constitutional Council. Simone Veil is notably known for her fight for the decriminalization of abortion from 1974 to 1975.</p>
+
+    <br><img src="public/icones/Ligne_hori.svg" alt="Horizontal line">
+    
+    <img src="public/img/ECS_Galerie.webp" alt="Picture of Elizabeth Cady Santon" id="img_galerie" style="float:right">
+    <p>Elizabeth Cady Stanton was born on November 12, 1815 and died on October 26, 1902 at 86 years old, in the United-States, she’s an American writer, abolitionist and suffragist. She’s become a feminist figure in the United States thanks to his fight for the right to vote and the</p>
+    <p>women’s right. In particular, together with other feminists, she created the first convention on women's rights, the Seneca Falls convention in 1848.</p>
+
+<!-- Fin de la Galerie -->
+
+<br>
+
+<!-- Glossaire -->
+
+<h3>Glossary</h3>
+<img src="public/icones/Ligne_hori.svg" alt="Horizontal line"><br>
+
+<p><strong><u>Suffragettes :</u></strong> They are the activists of the women's suffrage movement in the UK.</p>
+
+<p><strong><u>HeForShe :</u></strong> It’s a campaign launched by UN Women in 2014 to fight for gender equality and women's rights, all through actions led by men. Many celebrities participated like Emma Watson, Russell Crowe, Prince Harry or even the Obama couple.</p>
+
+<p><strong><u>CAMFED :</u></strong> It’s an organization created in 1993 to help poor countries in Africa by improving the school conditions of young girls. Several personalities participated, Emma Watson, Morgan Freeman, Bill Clinton and Rihanna for instance.</p>
+
+<p><strong><u>The Second Sex :</u></strong> It is a feminist essay written by Simone de Beauvoir in 1949, her essay addresses many of the issues on which women are considered inferior to men and why.</p>
+
+<p><strong><u>Women's Liberation Movement :</u></strong> It is a feminist movement composed exclusely of women launched in 1970 advocating the freedom of women and their bodies. Many women writers have joined the movement such as Simone de Beauvoir, Annie Sugier and Anne Zelensky.</p>
+
+<p><strong><u>Racial segregation :</u></strong> We talk about racial segregation when the state authorizes or applies discriminatory actions against an ethnic group.</p>
+
+<!-- Fin du glossaire -->
+
+<br>
+
+<!-- Pied de page -->
+
+<a class="#" href="Timeline.html"><img src="public/img/Vers_frise_ang.webp" alt="aperçu de la frise chronologique">
+</a>
+
+<footer class="footer">
+
+  <div class="footer_fleche">
+  <a href="#header"><img src="public/icones/chevrons_up_1.svg" alt="Arrow to go back in the page"></a>
+</div>
+
+<div class="footer__contact">  
+  <a class="#" href="About.html">
+<p>Contact : 
+<br>        - Contact Me
+<br>        - About Me
+  </p></a>
+</div>
+<p>theopasquarelli68@gmail.com</p>
+
+<div class="footer__info">
+<a class="/" href="http://mmimontbeliard.com/">
+  <p>Department MMI Montbéliard</p>
+  <img src="public/icones/logo_mmi.svg" alt="Logo MMI">
+  <p>4 Place Tharradin, 25200 Montbéliard</p>
+</a>
+</div>
+
+<br>
+<div>
+  <p>Follow me : </p>
+  <ul class="footer__list list-unstyled">
+    <li><a href="https://facebook.com" aria-label="facebook"><img src="public/icones/facebook.svg" alt="icon facebook"></a></li>
+    <li><a href="https://instagram.com" aria-label="instagram"><img src="public/icones/instagram.svg" alt="icon instagram"></a></li>
+    <li><a href="https://twitter.com" aria-label="twitter"><img src="public/icones/twitter.svg" alt="icon twitter"></a></li>
+  </ul>
+</div>
+
+<br>
+<ul class="footer__list list-unstyled">
+<li><a class="#" href="Index.html"><img src="public/icones/Drapeau_fr.svg" alt="French flag"></a></li>
+<li><a class="#" href="Index_ang.html"><img src="public/icones/Drapeau_ru.svg" alt="United-Kingdom flag"></a></li>
+</ul>
+
+<br>
+  
+  <p class="mention_footer">Project realized within the framework of an educational execrice in the MMI department of Montbéliard</p>
+
+</footer>
+<!-- Fin du pied de page -->
+
+
+</body>
+</html>

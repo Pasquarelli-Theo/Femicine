@@ -45,10 +45,34 @@ img {
   width: 375px;
 }
 
+.img__link{
+  position: relative;
+  width: 170px;
+  height: 106px;
+  margin: 10px;
+}
+
+.img__link2{
+  float: right;
+  position: relative;
+  width: 170px;
+  height: 106px;
+  top: -127px;
+  margin: 10px;
+}
+
 .frise{
   text-align: center;
   position: relative;
-  top: 1px;
+  top: -155px;
+  z-index: -1;
+}
+
+.frise__ang{
+  text-align: center;
+  position: relative;
+  top: -111px;
+  z-index: -1;
 }
 .art
   /* Bug IOS

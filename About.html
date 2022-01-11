@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+  <head>
+    <meta charset="utf-8">
+    <link href="src/css/gabarit.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fémiciné">
+
+    <title>Fémiciné - About me</title>
+
+<!-- Déclaration de la feuille de style -->
+
+    <link rel="stylesheet" href="src/css/style.css">
+
+<!-- Chargement de la librairie Alpine JS -->
+
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
+<!-- Chargement de la librairie Anime JS -->
+
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+
+    <script src="src/js/fonctions.js"></script>
+
+  </head>
+  <body x-data="{ atTop : false }">
+
+<!-- En-tête de la page -->
+
+<div id="header">
+<header class="header" 
+            :class="atTop && 'header--atTop'"
+            @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
+
+      <div class="header__start">
+
+      <h1><a href='/'> <img src="public/icones/Titre.svg" alt="Logo Fémiciné"></a></h1>
+      </div>
+
+      <div class="header__end">
+
+      <button class="header__menu-btn menu-btn"
+                @click="menuIsOpen = !menuIsOpen"
+                :class="menuIsOpen && 'menu-btn--open'">
+          <span class="menu-btn__bar"></span>
+      </button>
+
+<!-- Menu principal -->
+
+<nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+    <ul class="menu__list list-unstyled">
+      <li class="menu__item"><a class="menu__link" href="Index_ang.html">Homepage</a></li>
+      <li class="menu__item"><a class="menu__link" href="Article feminist ang.html">A feminist in cinema</a></li>
+      <li class="menu__item"><a class="menu__link" href="Article movie ang.html">From history to the big screen</a></li>
+      <li class="menu__item"><a class="menu__link" href="Article history ang.html">The suffragette, a story of the right to vote</a></li>
+      <li class="menu__item"><a class="menu__link" href="Timeline.html">Timeline</a></li>
+      <li class="menu__item"><a class="menu__link" href="Gallery ang.html">Gallery of feminism</a></li>
+      <li class="menu__item"><a class="menu__link" href="Other projects.html">Other projects</a></li>
+      <li class="menu__item"><a class="menu__link" href="About.html">About Me/Contact Me</a></li>
+    </ul>
+  </nav>
+
+<!-- Fin du menu principal -->
+      </div>
+    </header>
+  </div>
+
+<!-- Fin de l'en-tête de page -->
+
+<!-- Contenu principal de la page -->
+
+<main>
+
+    <h2>About me</h2>
+    <img src="public/icones/Ligne_hori.svg" alt="Ligne horizontale de séparation">
+    <p>I’m a student at BUT MMI in Montbéliard named Théo Pasquarelli and I’m 18. It’s project is very important to me because it is the first one I have done, and I thank you for consulting it. I arrived in MMI in September 2021 after a long search and I do not regret my choice ! This site deals with feminism, a very important subject because despite our time there are still many inequalities between men and women. I decided to approach feminism in large part through the cinema because it is one of my passions but also because many actors and actresses claim to be feminist and there are a lot of movie on the subject.
+      Je pense vous avoir dit l’essentiel pour le moment et vous laisse continuer à naviguer sur le site ou bien me contacter grâce au formulaire ci-dessous.</p>
+  
+<!-- Fin du contenu principal -->
+
+<!-- Formulaire de contact -->
+
+<h2>Contact</h2>
+<img src="public/icones/Ligne_hori.svg" alt="Ligne horizontale de séparation">
+
+<form>
+<br>
+ <input type="text" placeholder="Name"> <br> <br> 
+
+ <input type="text" placeholder="Firstname"> <br> <br> 
+
+ <input type="text" placeholder="E-mail"> <br> <br>
+
+ <textarea name="" id="" cols="40" rows="5" placeholder="Your Message"></textarea><br><br>
+
+ <button class="envoyer">Send</button>
+
+</form>
+
+<p>Visit my classmates' websites by <a class="/" href="Other projects.html">clicking here!</p>
+</main>
+
+<!-- Fin du formulaire de contact -->
+
+<!-- Pied de page -->
+
+<footer class="footer">
+
+    <div class="footer_fleche">
+    <a href="#header"><img src="public/icones/chevrons_up_1.svg" alt="Arrow to go back in the page"></a>
+  </div>
+
+  <div class="footer__contact">  
+    <a class="#" href="About.html">
+  <p>Contact : 
+<br>        - Contact Me
+<br>        - About Me
+    </p></a>
+</div>
+ <p>theopasquarelli68@gmail.com</p>
+
+  <div class="footer__info">
+  <a class="/" href="http://mmimontbeliard.com/">
+    <p>Department MMI Montbéliard</p>
+    <img src="public/icones/logo_mmi.svg" alt="Logo MMI">
+    <p>4 Place Tharradin, 25200 Montbéliard</p>
+  </a>
+  </div>
+
+  <br>
+  <div>
+    <p>Follow me : </p>
+    <ul class="footer__list list-unstyled">
+      <li><a href="https://facebook.com" aria-label="facebook"><img src="public/icones/facebook.svg" alt="icon facebook"></a></li>
+      <li><a href="https://instagram.com" aria-label="instagram"><img src="public/icones/instagram.svg" alt="icon instagram"></a></li>
+      <li><a href="https://twitter.com" aria-label="twitter"><img src="public/icones/twitter.svg" alt="icon twitter"></a></li>
+    </ul>
+  </div>
+
+  <br>
+<ul class="footer__list list-unstyled">
+  <li><a class="#" href="Index.html"><img src="public/icones/Drapeau_fr.svg" alt="French flag"></a></li>
+  <li><a class="#" href="Index_ang.html"><img src="public/icones/Drapeau_ru.svg" alt="United-Kingdom flag"></a></li>
+</ul>
+
+<br>
+    
+    <p class="mention_footer">Project realized within the framework of an educational execrice in the MMI department of Montbéliard</p>
+
+  </footer>
+<!-- Fin du pied de page -->
+
+  
+  </body>
+</html>

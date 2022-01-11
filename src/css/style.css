@@ -15,14 +15,12 @@
 /* Layout */
 @import "layout/header.css";
 @import "layout/footer.css";
-@import "layout/section.css";
-@import "layout/section-presentation.css";
 
 /* Components */
 @import "components/menu.css";
-@import "components/button.css";
 @import "components/carrousel.css";
 @import "components/formulaire.css";
+@import "components/button.css";
 
 /*JavaScript*/
 @import url("/src/js/fonctions.js");
