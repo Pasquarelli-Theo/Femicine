@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+  <head>
+    <meta charset="utf-8">
+    <link href="src/css/gabarit.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fémiciné">
+
+    <title>Fémiciné - Article movie</title>
+
+<!-- Déclaration de la feuille de style -->
+
+    <link rel="stylesheet" href="src/css/style.css">
+
+<!-- Chargement de la librairie Alpine JS -->
+
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
+<!-- Chargement de la librairie Anime JS -->
+
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+
+    <script src="src/js/fonctions.js"></script>
+
+  </head>
+  <body x-data="{ atTop : false }">
+
+<!-- En-tête de la page -->
+
+<div id="header">
+<header class="header" 
+            :class="atTop && 'header--atTop'"
+            @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
+
+      <div class="header__start">
+
+      <h1><a href='/'> <img src="public/icones/Titre.svg" alt="Logo Fémiciné"></a></h1>
+      </div>
+
+      <div class="header__end">
+
+      <button class="header__menu-btn menu-btn"
+                @click="menuIsOpen = !menuIsOpen"
+                :class="menuIsOpen && 'menu-btn--open'">
+          <span class="menu-btn__bar"></span>
+      </button>
+
+<!-- Menu principal -->
+
+      <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+        <ul class="menu__list list-unstyled">
+          <li class="menu__item"><a class="menu__link" href="Index.html">Homepage</a></li>
+          <li class="menu__item"><a class="menu__link" href="Article feminist ang.html">A feminist in cinema</a></li>
+          <li class="menu__item"><a class="menu__link" href="Article oeuvre.html">From history to the big screen</a></li>
+          <li class="menu__item"><a class="menu__link" href="Article histoire.html">The suffragette, a story of the right to vote</a></li>
+          <li class="menu__item"><a class="menu__link" href="Frise.html">Timeline</a></li>
+          <li class="menu__item"><a class="menu__link" href="Galerie.html">Gallery of feminism</a></li>
+          <li class="menu__item"><a class="menu__link" href="Autres projets.html">Other projects</a></li>
+          <li class="menu__item"><a class="menu__link" href="À propos.html">About Me/Contact Me</a></li>
+        </ul>
+      </nav>
+
+<!-- Fin du menu principal -->
+      </div>
+    </header>
+  </div>
+
+<!-- Fin de l'en-tête de page -->
+
+<!-- Contenu principal de la page -->
+
+<main>
+
+    <h2>From history to the big screen</h2>
+    <img src="public/icones/Ligne_hori.svg" alt="Ligne horizontale de séparation">
+    <p>Directed by Sarah Gavron and released in France the 17 november 2015, the movie Suffragette retraces the end of the fight for the right to vote in United-Kingdom from 1912 to 1913. Supported by a great performance of Carey Mulligan, the movie tells us the story of Maud Watts who became a suffragette in spite of herself.</p><br>
+    <h3>A true story</h3>
+    <img src="public/icones/Ligne_hori.svg" alt="Ligne horizontale de séparation"><br>
+    <br><img src="public/img/Promo_Suffragettes.webp" alt="Affiche du film Les Suffragettes">
+    <figcaption><p>Promotional poster for the movie The Suffragettes</p></figcaption>
+    <p>The movie therefore retraces the story of Maud Watts, interpreted by Carey Mulligan, a young woman of 24 years, married and mother of a little boy. Maud works since she’s little in a laundry and has an ordinary life for this period. But her life will change when her director entrusts him with the delivery of a package. On the way Maud is taken in the middle of an action of the suffragettes and recognizes Violet Miller, also an employee of the laundry. The two women attend a few days later at the wife of a deputy who proposes to go and testify at the Parliament in order to get the right to vote, Violet Miller accepts immediately. After having refused, Maud Watts accepts to come to the event, she finds herself in spite of herself to testify because Violet can't. So she tells her story to the judge during a poignant speech, she tells she has been exploited for years and the inequalities in the laundry. After many testimonies, the women wait for the result which is obviously negative. The crowd gets restless and the police respond with violence, Maud is finally arrested and in prison for a week.</p>
+    <img src="public/img/image_film1.webp" alt="Les personnages de Maud et Violet durant une manifestation">
+    <figcaption><p>Maud and Violet during a demonstration</p></figcaption>
+    <p>On her return home, her husband Sonny explains his dissatisfaction, the shame suffered by his fault and orders him to not restart. But a few days later, Maud attends a meeting of suffragettes at Edith Ellyn, played by Helena Bonham Carter, a pharmacist and suffragette. Then attends a speech by Emmeline Pankhusrt, played by Meryl Streep, creator of the WSPU and leader of suffragettes. But the police arrive quickly on the scene and Maud is again arrested. To its release,  her husband doesn’t accept that she comes home and forbids her to see her son. It’s at this moment that Maud completely joins the suffragettes and participes to more and more actions like the destruction of the empty house of a parliamentarian. Maud is once again arrested and decides to begin a hunger strike, countering that she’s fed with force by the guards.</p>
+    <img src="public/img/image_film2.webp" alt="Photo de la scène durant laquelle Maud est arrêtée par la police">
+    <figcaption><p>Maud arrested by the police</p></figcaption>
+    <p>Once released, the group decide to do their biggest action, enter in contact with the king George V during a horse race. But the women encounter difficulties and Emily Davison, who Maud had met in prison, throws herself under the king’s horse with a banner in hand. This allows the suffragettes to make the headlines and to be heard. It was in 1918 that all this came to an end, women over the age of 21 get the right to vote and they all obtain it in 1928.</p>
+  
+  <br>
+    <h3>A movie that lives up to its purpose?</h3>
+    <img src="public/icones/Ligne_hori.svg" alt="Ligne horizontale de séparation">
+    <br><br><p>The movie has received quite good reviews, 3,8/5 on <a class="/" href="https://www.allocine.fr/film/fichefilm_gen_cfilm=222967.html">Allociné</a> and 73% on <a class="/" href="https://www.rottentomatoes.com/m/suffragette">Rotten Tomatoes</a>, with a good realization of Sarah Gavron, good performance from the actors but above all a very good scenario. Indeed one of the good points of the movie is that it treats the suffragettes without using the facility and tells the story of Emmeline Pankhurst. We follow a woman who initially has no connection with the WSPU but ends up being one of the important members of the group. Which is a change from the usual historical films and it’s a very good idea. Moreover, the scenariste, Abi Morgan didn’t try to demonize men,which would not have been complicated. Indeed the males characters are certainly hard on women but it’s a coherent comportment with the period during which the film takes place. So we are dealing with a good quality movie with a more than successful scenario and actors who played their roles very well.</p>
+    <img src="public/img/actrices_film.webp" alt="Photo des actrices principales du film">
+    <figcaption><p>The actresses of Emmeline, Maud, Edith and Violet (from left to right)</p></figcaption>
+  
+  </main>
+  
+  <!-- Fin du contenu principal -->
+  
+  <!-- Lire aussi-->
+  
+  <h3>Lire aussi</h3>
+  <img src="public/icones/Ligne_hori.svg" alt="Ligne horizontale de séparation"><br>
+  <a class="#" href="Article histoire.html"><img src="public/img/Vers_article_histoire.webp" alt="Photo of a group of suffragettes"></a>
+  <a class="#" href="Article feministe.html"><img src="public/img/Vers_article_Natalie_Portman.webp" alt="Natalie Portman child and adult"></a>
+  
+  <!-- Fin Lire aussi-->
+
+      <!-- Pied de page -->
+
+      <footer class="footer">
+
+        <div class="footer_fleche">
+        <a href="#header"><img src="public/icones/chevrons_up_1.svg" alt="Arrow to go back in the page"></a>
+      </div>
+    
+      <div class="footer__contact">  
+        <a class="#" href="À propos.html">
+      <p>Contact : 
+    <br>        - Contact Me
+    <br>        - About Me
+        </p></a>
+    </div>
+     <p>theopasquarelli68@gmail.com</p>
+    
+      <div class="footer__info">
+      <a class="/" href="http://mmimontbeliard.com/">
+        <p>Department MMI Montbéliard</p>
+        <img src="public/icones/logo_mmi.svg" alt="Logo MMI">
+        <p>4 Place Tharradin, 25200 Montbéliard</p>
+      </a>
+      </div>
+    
+      <br>
+      <div>
+        <p>Follow me : </p>
+        <ul class="footer__list list-unstyled">
+          <li><a href="https://facebook.com" aria-label="facebook"><img src="public/icones/facebook.svg" alt="icon facebook"></a></li>
+          <li><a href="https://instagram.com" aria-label="instagram"><img src="public/icones/instagram.svg" alt="icon instagram"></a></li>
+          <li><a href="https://twitter.com" aria-label="twitter"><img src="public/icones/twitter.svg" alt="icon twitter"></a></li>
+        </ul>
+      </div>
+    
+      <br>
+    <ul class="footer__list list-unstyled">
+      <li><a class="#" href="Index.html"><img src="public/icones/Drapeau_fr.svg" alt="French flag"></a></li>
+      <li><a class="#" href="Index_ang.html"><img src="public/icones/Drapeau_ru.svg" alt="United-Kingdom flag"></a></li>
+    </ul>
+    
+    <br>
+        
+        <p class="mention_footer">Project realized within the framework of an educational execrice in the MMI department of Montbéliard</p>
+    
+      </footer>
+    <!-- Fin du pied de page -->
+    
+      
+      </body>
+    </html>

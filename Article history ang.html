@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+  <head>
+    <meta charset="utf-8">
+    <link href="src/css/gabarit.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fémiciné">
+
+    <title>Fémiciné - Article suffragettes</title>
+
+<!-- Déclaration de la feuille de style -->
+
+    <link rel="stylesheet" href="src/css/style.css">
+
+<!-- Chargement de la librairie Alpine JS -->
+
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
+<!-- Chargement de la librairie Anime JS -->
+
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+
+    <script src="src/js/fonctions.js"></script>
+
+  </head>
+  <body x-data="{ atTop : false }">
+
+<!-- En-tête de la page -->
+
+<div id="header">
+<header class="header" 
+            :class="atTop && 'header--atTop'"
+            @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
+
+      <div class="header__start">
+
+      <h1><a href='/'> <img src="public/icones/Titre.svg" alt="Logo Fémiciné"></a></h1>
+      </div>
+
+      <div class="header__end">
+
+      <button class="header__menu-btn menu-btn"
+                @click="menuIsOpen = !menuIsOpen"
+                :class="menuIsOpen && 'menu-btn--open'">
+          <span class="menu-btn__bar"></span>
+      </button>
+
+<!-- Menu principal -->
+
+      <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+        <ul class="menu__list list-unstyled">
+          <li class="menu__item"><a class="menu__link" href="Index.html">Homepage</a></li>
+          <li class="menu__item"><a class="menu__link" href="Article feminist ang.html">A feminist in cinema</a></li>
+          <li class="menu__item"><a class="menu__link" href="Article oeuvre.html">From history to the big screen</a></li>
+          <li class="menu__item"><a class="menu__link" href="Article histoire.html">The suffragette, a story of the right to vote</a></li>
+          <li class="menu__item"><a class="menu__link" href="Frise.html">Timeline</a></li>
+          <li class="menu__item"><a class="menu__link" href="Galerie.html">Gallery of feminism</a></li>
+          <li class="menu__item"><a class="menu__link" href="Autres projets.html">Other projects</a></li>
+          <li class="menu__item"><a class="menu__link" href="À propos.html">About Me/Contact Me</a></li>
+        </ul>
+      </nav>
+
+<!-- Fin du menu principal -->
+      </div>
+    </header>
+  </div>
+
+<!-- Fin de l'en-tête de page -->
+
+<!-- Contenu principal de la page -->
+
+<main>
+
+    <h2>The suffragette, a story of the right to vote</h2>
+    <img src="public/icones/Ligne_hori.svg" alt="Horizontal dividing line">
+    <p><i>The Suffragette are the members of the british organization, the Women’s Social and Political Union (WSPU). An organization created in 1903 to demand women's suffrage in the United-Kingdom. Indeed in the United-Kingdom women’s suffrage was accepted in 1928. It’s before France who accept it in 1944. But after some countries like Denmark in 1915 or Germany in 1918.</i></p><br>
+    <h3>Emmeline Pankhurst the revolutionary one</h3>
+    <img src="public/icones/Ligne_hori.svg" alt="Horizontal dividing line"><br>
+    <br><img src="public/img/Emmeline_Pankhusrt.webp" alt="Picture of Emmeline Pankhurst">
+    <figcaption><p>Emmeline Pankhurst</p></figcaption>
+    <p> The WSPU was created in Manchester by women of the Pankhurst family. Emmeline, the mother, and her daughter CHristabel, Sylvia and Adela. Emmeline decides to create the WSPU after having witnessed some ineffective action of the National Society for Women’s Suffrage. The objective of WSPU is to do more direct action.
+        The actions begin in 1905 when Christabel and Annie Kenney manifeste in a Liberal Party meeting. The two women are arrested for having chanted feminist slogan during the meeting. The WSPU continues the actions. On 21 june 1908, 200 000 people, including 50 000 white dress, came together to Hyde Park for women’s suffrage. But nothing changes. They also do some hunger strikes, they chained themselves on the Parlement portail, etc … But the government is still blind and doesn’t accept the demands of the Suffragettes.</p>
+    <img src="public/img/hyde_park.webp" alt="Picture of the suffragettes at the Hyde Park demonstration">
+    <figcaption><p>Photo of the demonstration in Hyde Park</p></figcaption>
+    
+    <h3>A fight badly started</h3>
+    <p>However after several years of fight without result the WSPU loses activists. First because of lack of result, and also because they are no longer in agreement with Emmeline Pankhurst’s violent methods. In 1907 Teresa Billington creates the Women’s Freedom League (WFL). An organisation with the same objective as the WSPU but with more peaceful actions. They don’t pay their taxes or they don’t participe to the referencement. The WSPU, the WFL and other activists continue their actions. More and more Suffragettes were arrested by the police but that doesn’t slow them down. Indeed they use their trials to mediate and diffuse their ideas in all of the United-Kingdom.</p>
+    <img src="public/img/Suffragettes_reunion.webp" alt="Photo of a group of suffragettes in front of the police court">
+    <figcaption><p>A group of suffragettes in front of the police court</p></figcaption>
+    <p>The Suffragettes continue their actions with some hunger strikes or manifestations. The police answer with more and more violence such as Mary Jane, the Emmeline’s sister, is mortally injured by the police on Christmas day 1910. Suffragettes abandone peaceful actions. In march 1912 they broke all glass of the streets of London’s West. In 1913 Christabel, the sister of Emmeline, escaped in France and her mother in jail. Christabel try to give a petition to the France’s King but she’s arrested. The WSPU becomes clandestine.</p>
+   
+    <h3>The long-awaited victory</h3>
+    <img src="public/icones/Ligne_hori.svg" alt="Horizontal dividing line"><br>
+    <p>In 1914 the first World War began. Emmeline proposes a deal. In exchange for the liberation of all Suffragettes, they will participate to the war effort by working in factories. The government accept the deal. Some soldiers begin to come back in 1916, soldiers who are for women's suffrage. The government understands they must give suffrage to women. Soldiers fought for the country, the government can’t ignore them. Activists continue their actions for the movement and to put pressure on the government. They must give to women what men have. In 1918 the Representation of the people Act was voted on. It allows women over 31 years with a husband registered to vote and owner, and men over 21 years to vote! The eal women’s suffrage for all women over 21 years was voted in july 1928. It was a fight of 25 years for Emmeline Pankhurst and the WSPU, but the fight has begun before and has lasted 60 long years.</p>
+    <img src="public/img/Representation_of_the_People_Act_.webp" alt="Photo of the original work">
+    <figcaption><p>The Representation of the People Act</p></figcaption>
+  
+  <!-- Fin du contenu principal -->
+  
+  <!-- Lire aussi-->
+  
+  <h3>Lire aussi</h3>
+  <img src="public/icones/Ligne_hori.svg" alt="Horizontal dividing line"><br>
+  <a class="#" href="Article oeuvre.html"><img src="public/img/Vers_article_film.webp" alt="Poster of the movie The Suffragettes"></a>
+  <a class="#" href="Article feministe.html"><img src="public/img/Vers_article_Natalie_Portman.webp" alt="Natalie Portman child and adult"></a>
+  
+  <!-- Fin Lire aussi-->
+
+    <!-- Pied de page -->
+
+    <footer class="footer">
+
+        <div class="footer_fleche">
+        <a href="#header"><img src="public/icones/chevrons_up_1.svg" alt="Arrow to go back in the page"></a>
+      </div>
+    
+      <div class="footer__contact">  
+        <a class="#" href="À propos.html">
+      <p>Contact : 
+    <br>        - Contact Me
+    <br>        - About Me
+        </p></a>
+    </div>
+     <p>theopasquarelli68@gmail.com</p>
+    
+      <div class="footer__info">
+      <a class="/" href="http://mmimontbeliard.com/">
+        <p>Department MMI Montbéliard</p>
+        <img src="public/icones/logo_mmi.svg" alt="Logo MMI">
+        <p>4 Place Tharradin, 25200 Montbéliard</p>
+      </a>
+      </div>
+    
+      <br>
+      <div>
+        <p>Follow me : </p>
+        <ul class="footer__list list-unstyled">
+          <li><a href="https://facebook.com" aria-label="facebook"><img src="public/icones/facebook.svg" alt="icon facebook"></a></li>
+          <li><a href="https://instagram.com" aria-label="instagram"><img src="public/icones/instagram.svg" alt="icon instagram"></a></li>
+          <li><a href="https://twitter.com" aria-label="twitter"><img src="public/icones/twitter.svg" alt="icon twitter"></a></li>
+        </ul>
+      </div>
+    
+      <br>
+    <ul class="footer__list list-unstyled">
+      <li><a class="#" href="Index.html"><img src="public/icones/Drapeau_fr.svg" alt="French flag"></a></li>
+      <li><a class="#" href="Index_ang.html"><img src="public/icones/Drapeau_ru.svg" alt="United-Kingdom flag"></a></li>
+    </ul>
+    
+    <br>
+        
+        <p class="mention_footer">Project realized within the framework of an educational execrice in the MMI department of Montbéliard</p>
+    
+      </footer>
+    <!-- Fin du pied de page -->
+    
+      
+      </body>
+    </html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+  <head>
+    <meta charset="utf-8">
+    <link href="src/css/gabarit.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fémiciné">
+
+    <title>Fémiciné - Article Natalie Portman</title>
+
+<!-- Déclaration de la feuille de style -->
+
+    <link rel="stylesheet" href="src/css/style.css">
+
+<!-- Chargement de la librairie Alpine JS -->
+
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
+<!-- Chargement de la librairie Anime JS -->
+
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+
+    <script src="src/js/fonctions.js"></script>
+
+  </head>
+  <body x-data="{ atTop : false }">
+
+<!-- En-tête de la page -->
+
+<div id="header">
+<header class="header" 
+            :class="atTop && 'header--atTop'"
+            @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
+
+      <div class="header__start">
+
+      <h1><a href='/'> <img src="public/icones/Titre.svg" alt="Logo Fémiciné"></a></h1>
+      </div>
+
+      <div class="header__end">
+
+      <button class="header__menu-btn menu-btn"
+                @click="menuIsOpen = !menuIsOpen"
+                :class="menuIsOpen && 'menu-btn--open'">
+          <span class="menu-btn__bar"></span>
+      </button>
+
+<!-- Menu principal -->
+
+      <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+        <ul class="menu__list list-unstyled">
+          <li class="menu__item"><a class="menu__link" href="Index.html">Homepage</a></li>
+          <li class="menu__item"><a class="menu__link" href="Article feminist ang.html">A feminist in cinema</a></li>
+          <li class="menu__item"><a class="menu__link" href="Article oeuvre.html">From history to the big screen</a></li>
+          <li class="menu__item"><a class="menu__link" href="Article histoire.html">The suffragette, a story of the right to vote</a></li>
+          <li class="menu__item"><a class="menu__link" href="Frise.html">Timeline</a></li>
+          <li class="menu__item"><a class="menu__link" href="Galerie.html">Gallery of feminism</a></li>
+          <li class="menu__item"><a class="menu__link" href="Autres projets.html">Other projects</a></li>
+          <li class="menu__item"><a class="menu__link" href="À propos.html">About Me/Contact Me</a></li>
+        </ul>
+      </nav>
+
+<!-- Fin du menu principal -->
+      </div>
+    </header>
+  </div>
+
+<!-- Fin de l'en-tête de page -->
+
+<!-- Contenu principal de la page -->
+
+<main>
+
+    <h2>A feminist in cinema</h2>
+    <img src="public/icones/Ligne_hori.svg" alt="Horizontal dividing line">
+    <p><i>    During the fifty last years feminism took more and more importance for women, and for men as well. Feminism is also present among celebrities, artists, singers or actresses. Many celebrities have taken a stand in the feminist struggle. It began with some actresses like Delphine Seyrig in the 1970’s. And it continues nowaday with for instance Emma Watson, Angelina Jolie or Natalie Portman. And that's who we're going to talk about in this article.</i></p><br>
+    <h3>Neta-Lee Hershlag</h3>
+    <img src="public/icones/Ligne_hori.svg" alt="Horizontal dividing line"><br>
+    <br><img src="public/img/Natalie-Portman 1.webp" alt="Natalie Portman child and adult">
+    <figcaption><p>Natalie Portman in 1994 and 1999</p></figcaption>
+    <p>    Neta-Lee Hershlag was born the 9th june 1981 in Jerusalem, she’s the daughter of an Israeli doctor, Avner Hershlag, and an american mother, Shelley Stevens. At the age of 3, the parents of Natalie Portman decide to leave Jerusalem to move to the Maryland state in the United-States because her father wants to finish his formation. After some years, her father Avner has the right to practice in the United-States and finds a job in Long Island in the state of New York. While she is 10 years old, Natalie Portman is approached by a cosmetic brand, Revlon, for an advertising campaign. But she declines the offer and says she wants to do cinema, the agents then help him to find some auditions.</p>
+  
+    <h3>The Beginning of the success</h3>
+    <img src="public/icones/Ligne_hori.svg" alt="Horizontal dividing line"><br>
+    <p>In 1994 Natalie Portman gets her first role at the cinema, it was the role of Mathilda with Jean Reno in the movie Léon by Luc Besson. It’s at this moment she decides to take the artist’s name Portman, it was her grandmother's maiden name.</p>
+    <br><img src="public/img/NP_JR_Léon.webp" alt="Natalie Portman and Jean Reno in the movie Léon">
+    <figcaption><p>Natalie Portman and Jean Reno in The Professional</p></figcaption>
+    <p> Two years later, in 1996, she plays with the huge Al Pacino in the movie Heat where she plays his daughter. As well as in the dramatic comedy Beautiful Girls. In 1997 she plays in 2 movies, from Woody Allen and Tim Burton. And also in the theatre adaptation of Anne Frank: The Diary of a Young Girl, a strong action considering she is Jewish and her grandparents are dead in Auschwitz.</p>
+    <div class="art__iem--SW1"><img src="public/img/SW_1_article.webp" alt="Poset of the movie Star Wars episode 1 : The Phantom Menace"></div>
+    <figcaption><p>Poster of Star Wars episode I</p></figcaption>
+    <br>
+    <p>In the same years she also plays in a movie that will propel his career to a new level. It was obviously the movie Star Wars, episode I : The Phantom Menace, the first part of the prelogy of Star Wars saga, where she plays Padmé Amidala, one the main characters of the movie. A role she takes on for the 2 following parts.</p><br>
+  
+    <h3>A career crossed with studies</h3><br>
+    <img src="public/icones/Ligne_hori.svg" alt="Horizontal dividing line">
+    <br><p>In parallel to that Natalie Portman continues her studies and she integrates the prestigious university of Harvard and she settles in London to study psychologie 1999. The same year the film Anywhere But Here was released in which she plays a girl with a conflictual relationship with her mother. A film that she initially refused due to a sexual scene, but she finally accepts it after a rewrite of the script. A good choice because this movie allowed her to be nominated to the 2000 Golden Globes in the best supporting actress category. She continues her studies at Harvard until 2003 and next to that she plays in some like  Star Wars, episode II : Attack of the Clones, and Cold Mountain with Nicole Kidman. As well as in the play The Seagull with Meryl Streep. After graduation in 2003 she gets involve in her career full time and and she will chain the success like Closer, Star Wars, episode III : Revenge of the Sith, etc… This until the release of the movie which is probably her greatest critical success, Black Swan. This movie earned her 24 rewards including the Oscar of the best actress in 2011 and the Golden Globe of the best actress in a dramatic film also in 2011. This obviously does not mark the end of her career.</p>
+    <br><img src="public/img/Black_Swan_article.webp" alt="Promotional poster of the movie Black Swan">
+    <figcaption><p>Promotional poster of Black Swan</p></figcaption><br>
+  
+    <h3>A feminist above all !</h3>
+    <img src="public/icones/Ligne_hori.svg" alt="Horizontal dividing line">
+    <br><p>With her impressive career Natalie Portman is without doubt a strong woman of the last years. But she’s also an assumed feminist, she is one of the actresses who do not want to use her body unnecessarily in sexual scene. She wants to make a name for herself with her talent and not her body. But above all, she has repeatedly claimed her feminism, like in november 2013 when she declared “The fallacy in Hollywood is that if you're making a 'feminist' story, the woman kicks ass and win. That's not feminist, that's macho”. Or also at the Golden Globes 2018 when she denounced the absence of women for the award for best director. Natalie also created a women’s football team in the company of many</p>
+    <img src="public/img/Natalie_Portman_Cannes.webp" alt="Natalie Portman at the 2015 Cannes Film Festival">
+    <figcaption><p>Natalie Portman at the 2015 Cannes Film Festival</p></figcaption>
+    <p>celebrities like Serena Williams, Eva Longoria and Jessica Chastain, the club named Angel City Football Club should make its entrance in the championship in 2022. An assumed and engaged feminist and that for many years.</p>
+  
+  </main>
+  
+  <!-- Fin du contenu principal -->
+  
+  <!-- Carrousel -->
+    <div class="entete">
+      <h3>Natalie Portman's greatest movies</h3>
+      <img src="public/icones/Ligne_hori.svg" alt="Ligne horizontale de séparation">
+    </div>
+    
+    <div class="carrousel-grid carrousel">
+      <div class="carrousel">
+        <div class="images4">
+          <a class="/" href="https://www.allocine.fr/film/fichefilm_gen_cfilm=125828.html"><img id="img1" class="image4" src="public/img/Black_Swan_Carrousel.webp" alt="Affiche du film Black Swan"></a>
+          <a class="/" href="https://www.allocine.fr/film/fichefilm_gen_cfilm=9684.html"><img id="img2" class="image4" src="public/img/Léon_Carrousel.webp" alt="Affiche du film Léon"></a>
+          <a class="/" href="https://www.allocine.fr/film/fichefilm_gen_cfilm=20754.html"><img id="img3" class="image4" src="public/img/SW1_Carrousel.webp" alt="Affiche du film Star Wars épisode 1 : La menace fantôme"></a>
+          <a class="/" href="https://www.allocine.fr/film/fichefilm_gen_cfilm=29014.html"><img id="img4" class="image4" src="public/img/SW2_Carrousel.webp" alt="Affiche du film Star Wars épisode 2 : L'attaque des clones"></a>
+          <a class="/" href="https://www.allocine.fr/film/fichefilm_gen_cfilm=40623.html"><img id="img5" class="image4" src="public/img/SW3_Carrousel.webp" alt="Affiche du film Star Wars épisode 3 : La revanche des Sith"></a>
+          <a class="/" href="https://www.allocine.fr/film/fichefilm_gen_cfilm=51594.html"><img id="img6" class="image4" src="public/img/Closer_Carrousel.webp" alt="Affiche du film Closer entre adultes consentants"></a>
+        </div>
+      </div>
+    <script>carrousel()</script>
+    </div>
+  
+  <!-- Fin du carrousel-->
+  
+  <!-- Lire aussi-->
+  
+  <h3>Read also</h3>
+  <img src="public/icones/Ligne_hori.svg" alt="Ligne horizontale de séparation"><br>
+  <a class="#" href="Article oeuvre.html"><img src="public/img/Vers_article_film.webp" alt="Poster of the movie Suffragettes"></a>
+  <a class="#" href="Article histoire.html"><img src="public/img/Vers_article_histoire.webp" alt="Picture of a group of suffragettes"></a>
+  
+  <!-- Fin Lire aussi-->
+
+  <!-- Pied de page -->
+
+  <footer class="footer">
+
+    <div class="footer_fleche">
+    <a href="#header"><img src="public/icones/chevrons_up_1.svg" alt="Arrow to go back in the page"></a>
+  </div>
+
+  <div class="footer__contact">  
+    <a class="#" href="À propos.html">
+  <p>Contact : 
+<br>        - Contact Me
+<br>        - About Me
+    </p></a>
+</div>
+ <p>theopasquarelli68@gmail.com</p>
+
+  <div class="footer__info">
+  <a class="/" href="http://mmimontbeliard.com/">
+    <p>Department MMI Montbéliard</p>
+    <img src="public/icones/logo_mmi.svg" alt="Logo MMI">
+    <p>4 Place Tharradin, 25200 Montbéliard</p>
+  </a>
+  </div>
+
+  <br>
+  <div>
+    <p>Follow me : </p>
+    <ul class="footer__list list-unstyled">
+      <li><a href="https://facebook.com" aria-label="facebook"><img src="public/icones/facebook.svg" alt="icon facebook"></a></li>
+      <li><a href="https://instagram.com" aria-label="instagram"><img src="public/icones/instagram.svg" alt="icon instagram"></a></li>
+      <li><a href="https://twitter.com" aria-label="twitter"><img src="public/icones/twitter.svg" alt="icon twitter"></a></li>
+    </ul>
+  </div>
+
+  <br>
+<ul class="footer__list list-unstyled">
+  <li><a class="#" href="Index.html"><img src="public/icones/Drapeau_fr.svg" alt="French flag"></a></li>
+  <li><a class="#" href="Index_ang.html"><img src="public/icones/Drapeau_ru.svg" alt="United-Kingdom flag"></a></li>
+</ul>
+
+<br>
+    
+    <p class="mention_footer">Project realized within the framework of an educational execrice in the MMI department of Montbéliard</p>
+
+  </footer>
+<!-- Fin du pied de page -->
+
+  
+  </body>
+</html>

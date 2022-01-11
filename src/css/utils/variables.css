@@ -22,8 +22,8 @@
 --title-menu: 23px;
 
 /* Polices de caractère */
---font-text: 'Spinnaker';
---font-title: 'Zen Kurenaido';
+--font-text: 'Spinnaker', sans-serif;
+--font-title: 'Zen Kurenaido', sans-serif;
 
 /* Font variantes */
 --letter-spacing: 0.05em;
